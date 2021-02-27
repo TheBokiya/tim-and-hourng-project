@@ -18,16 +18,18 @@ const menuItems = [
 ];
 
 const Header = ({ siteTitle }) => (
-  <header className="sm:flex">
-    <div className="flex items-center justify-end p-5">
-      {menuItems.map((item, index) => {
-        return (
-          <Link to={item.link} key={index} className="block sm:inline-block">
-            {item.page}
-          </Link>
-        );
-      })}
-    </div>
+  <header className="flex justify-center p-5 bg-indigo-900">
+    {menuItems.map((item, index) => {
+      return (
+        <Link
+          to={item.link}
+          key={index}
+          className="mx-5 text-white no-underline"
+        >
+          {item.page}
+        </Link>
+      );
+    })}
   </header>
 );
 

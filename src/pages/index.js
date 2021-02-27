@@ -9,15 +9,10 @@ import Header from "../components/header";
 
 const IndexPage = () => (
   <div>
-    <img className="max-w-full" src={CoverImg}></img>
-    <Layout>
-      <h1 className="py-10 text-6xl text-center text-gray-700">
-        Tim & MuyHourng
-      </h1>
-      <h4 className="text-center text-gray-500">
-        at Sofitel Phokeetra Phnom Penh, 5:30 PM
-      </h4>
-    </Layout>
+    <Header></Header>
+    <div className="h-screen">
+      <img className="object-cover h-3/4 w-full" src={CoverImg}></img>
+    </div>
   </div>
 );
 
