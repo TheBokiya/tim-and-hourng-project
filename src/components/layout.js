@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <div className="flex flex-col justify-between">
       <div className="container mx-auto px-5 pb-10 sm:px-20">{children}</div>
     </div>
   );
