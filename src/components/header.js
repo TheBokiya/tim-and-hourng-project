@@ -43,7 +43,9 @@ const Header = ({ siteTitle }) => {
         `header ${small ? "py-3" : "py-5"}`
       }
     >
-      <div className="flex flex-col pb-6">
+      <div
+        className={"flex flex-col pb-6 " + `${small ? "invisible" : "visible"}`}
+      >
         <h1 className="text-gray-600 text-3xl flex justify-center">
           Tim &amp; MuyHourng
         </h1>
@@ -57,7 +59,7 @@ const Header = ({ siteTitle }) => {
             <Link
               to={item.link}
               key={index}
-              className="mx-10 text-navy no-underline font-sans uppercase text-xs hover:text-gold tracking-widest font-medium"
+              className="transition duration-300 ease-in-out mx-10 text-navy no-underline font-sans uppercase text-xs hover:text-gold tracking-widest font-medium"
             >
               {item.page}
             </Link>
