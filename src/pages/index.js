@@ -19,7 +19,7 @@ const IndexPage = () => (
       ></img>
       <Layout>
         <div className="animate__animated animate__fadeIn animate__slow">
-          <h1 className="py-10 flex justify-center uppercase tracking-widest text-navy font-black">
+          <h1 className="py-10 flex justify-center uppercase tracking-wide text-navy font-sans font-black">
             Welcome to our wedding site
           </h1>
           <p>

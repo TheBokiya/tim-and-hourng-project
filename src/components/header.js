@@ -26,6 +26,7 @@ const menuItems = [
 ];
 
 const Header = ({ siteTitle }) => {
+  const [isOpen, setIsOpen] = useState(false);
   // const [small, setSmall] = useState(false);
 
   // useEffect(() => {
@@ -39,29 +40,41 @@ const Header = ({ siteTitle }) => {
   return (
     <header
       className={
-        "fixed top-0 w-screen z-10 border-b-4 border-navy bg-white py-5"
+        "fixed top-0 w-screen z-10 border-b-4 border-navy bg-white p-5"
       }
     >
-      <div className="pb-6">
-        <h1 className="flex justify-center text-gray-600 text-3xl">
-          Tim &amp; MuyHourng
-        </h1>
-        <h5 className="flex justify-center text-xs py-3 tracking-widest font-sans uppercase text-gray-300">
-          Phnom Penh | 2021
-        </h5>
+      <div className="sm:hidden">
+        <button
+          type="button"
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+        >
+          <span>Hamburger Menu</span>
+        </button>
       </div>
-      <div className="flex justify-center">
-        {menuItems.map((item, index) => {
-          return (
-            <Link
-              to={item.link}
-              key={index}
-              className="transition duration-300 ease-in-out mx-10 text-navy no-underline font-sans uppercase text-xs hover:text-gold tracking-widest font-medium"
-            >
-              {item.page}
-            </Link>
-          );
-        })}
+      <div className="">
+        <div className="pb-6">
+          <h1 className="flex justify-center text-gray-700 text-5xl uppercase">
+            Tim &amp; MuyHourng
+          </h1>
+          <h5 className="flex justify-center text-xs py-3 tracking-widest font-sans uppercase text-gray-300">
+            Phnom Penh | 2021
+          </h5>
+        </div>
+        <div className="flex justify-center">
+          {menuItems.map((item, index) => {
+            return (
+              <Link
+                to={item.link}
+                key={index}
+                className="mx-10 text-navy font-sans uppercase text-xs tracking-widest font-medium no-underline"
+              >
+                {item.page}
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </header>
   );

@@ -8,11 +8,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant Garamond", serif;
+}
+
+a {
+  @apply transition duration-300 ease-in-out hover:text-gold;
 }
 
 p {
-  @apply py-3 leading-loose text-gray-600 font-light;
+  @apply py-3 leading-loose text-gray-600 font-light text-lg;
 }
 
 @tailwind base;

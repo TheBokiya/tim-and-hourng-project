@@ -5,4 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+import "@fontsource/cormorant-garamond/300.css";
+import "@fontsource/cormorant-garamond/700.css";
+import "@fontsource/cormorant-garamond/700-italic.css";
 import "./src/styles/global.css";
