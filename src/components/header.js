@@ -26,27 +26,24 @@ const menuItems = [
 ];
 
 const Header = ({ siteTitle }) => {
-  const [small, setSmall] = useState(false);
+  // const [small, setSmall] = useState(false);
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", () =>
-        setSmall(window.pageYOffset > 200)
-      );
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     window.addEventListener("scroll", () =>
+  //       setSmall(window.pageYOffset > 200)
+  //     );
+  //   }
+  // }, []);
 
   return (
     <header
       className={
-        "flex flex-col border-b-4 border-navy " +
-        `header ${small ? "py-3" : "py-5"}`
+        "fixed top-0 w-screen z-10 border-b-4 border-navy bg-white py-5"
       }
     >
-      <div
-        className={"flex flex-col pb-6 " + `${small ? "invisible" : "visible"}`}
-      >
-        <h1 className="text-gray-600 text-3xl flex justify-center">
+      <div className="pb-6">
+        <h1 className="flex justify-center text-gray-600 text-3xl">
           Tim &amp; MuyHourng
         </h1>
         <h5 className="flex justify-center text-xs py-3 tracking-widest font-sans uppercase text-gray-300">
