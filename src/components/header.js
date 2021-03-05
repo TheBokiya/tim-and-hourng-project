@@ -27,21 +27,21 @@ const menuItems = [
 
 const Header = ({ siteTitle }) => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [small, setSmall] = useState(false);
+  const [small, setSmall] = useState(false);
 
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     window.addEventListener("scroll", () =>
-  //       setSmall(window.pageYOffset > 200)
-  //     );
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () =>
+        setSmall(window.pageYOffset > 200)
+      );
+    }
+  }, []);
 
   return (
     <header
-      className={
-        "fixed top-0 w-screen z-10 border-b-4 border-navy bg-white p-5"
-      }
+      className={`fixed top-0 w-screen z-10 bg-white p-5 transition duration-300 ease-in-out ${
+        small ? "opacity-80" : "opacity-100"
+      }`}
     >
       <div className="sm:hidden">
         <button
@@ -53,15 +53,18 @@ const Header = ({ siteTitle }) => {
           <span>Hamburger Menu</span>
         </button>
       </div>
-      <div className="">
-        <div className="pb-6">
-          <h1 className="flex justify-center text-gray-700 text-5xl uppercase">
-            Tim &amp; MuyHourng
-          </h1>
-          <h5 className="flex justify-center text-xs py-3 tracking-widest font-sans uppercase text-gray-300">
-            Phnom Penh | 2021
-          </h5>
-        </div>
+      <div>
+        {!small && (
+          <div className="pb-6">
+            <h1 className="flex justify-center text-gray-700 text-5xl uppercase">
+              Tim &amp; MuyHourng
+            </h1>
+
+            <h5 className="flex justify-center text-xs py-3 tracking-widest font-sans uppercase text-gray-300">
+              Phnom Penh | 2021
+            </h5>
+          </div>
+        )}
         <div className="flex justify-center">
           {menuItems.map((item, index) => {
             return (

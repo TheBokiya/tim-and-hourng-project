@@ -14,12 +14,12 @@ const IndexPage = () => (
     <Header></Header>
     <div className="mt-28">
       <img
-        className="object-cover h-3/4 w-full animate__animated animate__fadeIn animate__slow"
+        className="object-cover h-3/4 w-full animate__animated animate__fadeIn"
         src={CoverImg}
       ></img>
       <Layout>
-        <div className="animate__animated animate__fadeIn animate__slow">
-          <h1 className="py-10 flex justify-center uppercase tracking-wide text-navy font-sans font-black">
+        <div className="animate__animated animate__fadeIn">
+          <h1 className="py-10 flex justify-center uppercase tracking-wide text-navy font-black">
             Welcome to our wedding site
           </h1>
           <p>
