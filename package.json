@@ -6,6 +6,13 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@fontsource/cormorant-garamond": "^4.2.1",
+    "@fortawesome/fontawesome-pro": "^5.15.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/pro-duotone-svg-icons": "^5.15.2",
+    "@fortawesome/pro-light-svg-icons": "^5.15.2",
+    "@fortawesome/pro-regular-svg-icons": "^5.15.2",
+    "@fortawesome/pro-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "animate.css": "^4.1.1",
     "gatsby": "^2.32.3",
     "gatsby-image": "^2.11.0",

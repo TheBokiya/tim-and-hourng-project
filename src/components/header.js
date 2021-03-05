@@ -1,6 +1,8 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/pro-regular-svg-icons";
 
 const menuItems = [
   {
@@ -75,6 +77,12 @@ const Header = ({ siteTitle }) => {
                 activeClassName="text-gold"
               >
                 {item.page}
+                {item.page === "Events" && (
+                  <FontAwesomeIcon
+                    icon={faChevronDown}
+                    className="ml-2 transition duration-300 transform hover:rotate-180"
+                  />
+                )}
               </Link>
             );
           })}
