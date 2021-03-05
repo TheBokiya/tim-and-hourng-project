@@ -72,6 +72,7 @@ const Header = ({ siteTitle }) => {
                 to={item.link}
                 key={index}
                 className="mx-10 text-navy font-sans uppercase text-xs tracking-widest font-medium no-underline"
+                activeClassName="text-gold"
               >
                 {item.page}
               </Link>
