@@ -8,39 +8,43 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Cormorant Garamond", serif;
+	font-family: 'Cormorant Garamond', serif;
 }
 
 a {
-  @apply transition duration-300 ease-in-out hover:text-gold;
+	@apply transition duration-300 ease-in-out hover:text-gold;
 }
 
 p {
-  @apply py-3 leading-loose text-gray-600 font-light text-lg;
+	@apply py-3 leading-loose text-gray-600 font-light text-lg;
+}
+
+.header-link:hover .header-link-icon {
+	@apply transition duration-300 transform -rotate-180;
 }
 
 @tailwind base;
 @layer base {
-  h1 {
-    @apply text-2xl;
-  }
-  h2 {
-    @apply text-xl;
-  }
-  h3 {
-    @apply text-lg;
-  }
-  a {
-    @apply text-blue-600 underline;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-bold;
-  }
+	h1 {
+		@apply text-2xl;
+	}
+	h2 {
+		@apply text-xl;
+	}
+	h3 {
+		@apply text-lg;
+	}
+	a {
+		@apply text-blue-600 underline;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-bold;
+	}
 }
 @tailwind components;
 @tailwind utilities;
