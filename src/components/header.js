@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/pro-regular-svg-icons';
+import { faBars } from '@fortawesome/pro-light-svg-icons';
 
 const menuItems = [
 	{
@@ -46,16 +47,20 @@ const Header = ({ siteTitle }) => {
 			}`}
 		>
 			<div className="sm:hidden">
-				<button
-					type="button"
-					onClick={() => {
-						setIsOpen(!isOpen);
-					}}
-				>
-					<span>Hamburger Menu</span>
-				</button>
+				<div className="flex justify-between">
+					<h2 className="uppercase text-gray-700">Tim &amp; MuyHourng</h2>
+					<button
+						type="button"
+						className="focus:outline-none"
+						onClick={() => {
+							setIsOpen(!isOpen);
+						}}
+					>
+						<FontAwesomeIcon icon={faBars} className="text-navy" />
+					</button>
+				</div>
 			</div>
-			<div>
+			<div className="lg:block">
 				{!small && (
 					<div className="pb-6">
 						<h1 className="flex justify-center text-gray-700 text-5xl uppercase">
