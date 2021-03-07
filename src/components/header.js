@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/pro-regular-svg-icons";
-import { faBars } from "@fortawesome/pro-light-svg-icons";
+import { faBars, faTimes } from "@fortawesome/pro-light-svg-icons";
 
 const menuItems = [
   {
@@ -62,10 +62,33 @@ const Header = ({ siteTitle }) => {
               setIsOpen(!isOpen);
             }}
           >
-            <FontAwesomeIcon icon={faBars} className="text-navy" />
+            <FontAwesomeIcon
+              icon={faBars}
+              className={(!isOpen ? "block" : "hidden") + " text-navy"}
+            />
+            <FontAwesomeIcon
+              icon={faTimes}
+              className={(isOpen ? "block" : "hidden") + " text-navy"}
+            />
           </button>
         </div>
       </div>
+
+      <div className={(isOpen ? "block" : "hidden") + " pt-5 sm:flex relative"}>
+        {menuItems.map((item, index) => {
+          return (
+            <Link
+              to={item.link}
+              key={index}
+              className="block text-navy text-xs my-5 no-underline tracking-wider font-medium font-sans uppercase"
+              activeClassName="text-gold"
+            >
+              {item.page}
+            </Link>
+          );
+        })}
+      </div>
+
       <div className="hidden sm:block">
         {!small && (
           <div className="pb-10">
