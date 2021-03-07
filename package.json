@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fontsource/alice": "^4.2.2",
     "@fontsource/cormorant-garamond": "^4.2.1",
     "@fortawesome/fontawesome-pro": "^5.15.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",

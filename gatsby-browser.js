@@ -8,4 +8,5 @@
 import "@fontsource/cormorant-garamond/300.css";
 import "@fontsource/cormorant-garamond/700.css";
 import "@fontsource/cormorant-garamond/700-italic.css";
+import "@fontsource/alice";
 import "./src/styles/global.css";

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/pro-regular-svg-icons";
 import { faBars } from "@fortawesome/pro-light-svg-icons";
+import { faHeart } from "@fortawesome/pro-solid-svg-icons";
 
 const menuItems = [
   {
@@ -60,11 +61,15 @@ const Header = ({ siteTitle }) => {
           </button>
         </div>
       </div>
-      <div className="lg:block">
+      <div className="">
         {!small && (
           <div className="pb-10">
             <h1 className="flex justify-center text-gray-700 text-5xl uppercase">
-              Tim &amp; MuyHourng
+              Bodyka
+              <span className="text-gold text-lg mx-2 self-center title">
+                &amp;
+              </span>
+              Muy Hourng
             </h1>
 
             <h5 className="flex justify-center text-xs py-3 tracking-widest font-sans uppercase text-gray-300">
