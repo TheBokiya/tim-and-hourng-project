@@ -119,12 +119,12 @@ const Header = ({ siteTitle }) => {
                 activeClassName="text-gold"
               >
                 {item.page}
-                {item.page === "Wedding" && (
+                {/* {item.page === "Wedding" && (
                   <FontAwesomeIcon
                     icon={faChevronDown}
                     className="ml-2 header-link-icon"
                   />
-                )}
+                )} */}
               </Link>
             );
           })}
