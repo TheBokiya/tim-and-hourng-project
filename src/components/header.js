@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/pro-regular-svg-icons";
 import { faBars } from "@fortawesome/pro-light-svg-icons";
-import { faHeart } from "@fortawesome/pro-solid-svg-icons";
 
 const menuItems = [
   {
@@ -43,13 +42,19 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header
-      className={`fixed top-0 w-screen z-10 bg-white p-8 transition duration-300 ease-in-out ${
+      className={`fixed top-0 w-screen z-10 bg-white p-5 transition duration-300 ease-in-out ${
         small ? "opacity-90" : "opacity-100"
       }`}
     >
       <div className="sm:hidden">
         <div className="flex justify-between">
-          <h2 className="uppercase text-gray-700">Tim &amp; MuyHourng</h2>
+          <h3 className="flex justify-center text-gray-700 uppercase">
+            Bodyka
+            <span className="text-gold text-xs mx-2 self-center title">
+              &amp;
+            </span>
+            Muy Hourng
+          </h3>
           <button
             type="button"
             className="focus:outline-none"
@@ -61,7 +66,7 @@ const Header = ({ siteTitle }) => {
           </button>
         </div>
       </div>
-      <div className="">
+      <div className="hidden sm:block">
         {!small && (
           <div className="pb-10">
             <h1 className="flex justify-center text-gray-700 text-5xl uppercase">

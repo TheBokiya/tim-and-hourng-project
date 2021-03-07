@@ -14,7 +14,7 @@ import { faRingsWedding } from "@fortawesome/pro-light-svg-icons";
 const IndexPage = () => (
   <div>
     <Header></Header>
-    <div className="mt-28">
+    <div className="mt-16 sm:mt-28">
       <img
         className="object-cover h-3/5 w-full animate__animated animate__fadeIn"
         src={CoverImg}
@@ -22,7 +22,7 @@ const IndexPage = () => (
       <Layout>
         <div className="animate__animated animate__fadeIn">
           <div className="p-10">
-            <h1 className="text-primary flex justify-center uppercase tracking-wide text-navy font-black pb-5">
+            <h1 className="text-primary text-center flex justify-center uppercase tracking-wide text-navy font-black pb-5">
               Welcome to our wedding site
             </h1>
             <div className="flex justify-center">
