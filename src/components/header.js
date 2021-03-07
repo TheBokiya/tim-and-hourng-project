@@ -74,7 +74,11 @@ const Header = ({ siteTitle }) => {
         </div>
       </div>
 
-      <div className={(isOpen ? "block" : "hidden") + " pt-5 sm:flex relative"}>
+      <div
+        className={
+          (isOpen ? "block" : "hidden") + " pt-5 sm:flex sm:hidden relative"
+        }
+      >
         {menuItems.map((item, index) => {
           return (
             <Link
@@ -111,7 +115,7 @@ const Header = ({ siteTitle }) => {
               <Link
                 to={item.link}
                 key={index}
-                className="mx-10 text-navy font-sans uppercase text-xs tracking-widest font-medium no-underline header-link"
+                className="mx-10 text-navy font-sans uppercase text-xs tracking-widest no-underline header-link"
                 activeClassName="text-gold"
               >
                 {item.page}

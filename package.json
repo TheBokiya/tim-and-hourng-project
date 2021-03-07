@@ -7,6 +7,7 @@
   "dependencies": {
     "@fontsource/alice": "^4.2.2",
     "@fontsource/cormorant-garamond": "^4.2.1",
+    "@fontsource/roboto": "^4.2.2",
     "@fortawesome/fontawesome-pro": "^5.15.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/pro-duotone-svg-icons": "^5.15.2",
