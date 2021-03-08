@@ -1,13 +1,14 @@
 import React from "react";
 import Layout from "../components/layout";
 import Header from "../components/header";
+import ComingSoon from "../components/coming-soon";
 
 const OurStoryPage = () => {
   return (
     <div>
       <Header></Header>
       <Layout>
-        <div>This is the wedding page.</div>
+        <ComingSoon></ComingSoon>
       </Layout>
     </div>
   );

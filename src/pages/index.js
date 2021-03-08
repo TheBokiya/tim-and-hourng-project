@@ -10,10 +10,7 @@ import Image from "../components/image";
 import SEO from "../components/seo";
 import Header from "../components/header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronDoubleDown,
-  faRingsWedding,
-} from "@fortawesome/pro-light-svg-icons";
+import { faRingsWedding } from "@fortawesome/pro-light-svg-icons";
 
 const IndexPage = () => {
   return (
@@ -24,8 +21,8 @@ const IndexPage = () => {
           className="object-cover h-3/5 w-full animate__animated animate__fadeIn"
           src={CoverImg}
         />
-        <div className="absolute bottom-6 left-1/2 text-white">
-          <div class="hidden sm:block scroll">
+        <div className="hidden lg:block absolute bottom-6 left-1/2 text-white">
+          <div class="scroll">
             <button onClick={() => scrollTo("#bottom-page")}>
               <div class="mouse">
                 <div class="wheel"></div>
@@ -54,8 +51,9 @@ const IndexPage = () => {
             </p>
             <p>
               For guests traveling from abroad, we hope you find this site
-              particular useful in helping you navigate the busy city of Phnom
-              Penh. Please click here to read more information about the city.
+              particularly useful in helping you navigate the busy city of Phnom
+              Penh. Please click <Link to="/visiting-phnom-penh">here</Link>
+              to read more information about the city.
             </p>
             <p>
               Last but not least, thank you for checking out our wedding site.
