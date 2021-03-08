@@ -10,4 +10,6 @@ import "@fontsource/cormorant-garamond/700.css";
 import "@fontsource/cormorant-garamond/700-italic.css";
 import "@fontsource/alice";
 import "@fontsource/roboto";
+import "@fontsource/roboto/900.css";
 import "./src/styles/global.css";
+import "animate.css";

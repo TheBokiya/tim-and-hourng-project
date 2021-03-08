@@ -2,7 +2,6 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/pro-regular-svg-icons";
 import { faBars, faTimes } from "@fortawesome/pro-light-svg-icons";
 
 const menuItems = [
