@@ -106,20 +106,6 @@ const VisingPhnomPenhPage = () => {
             fit your budget. Below are some of the hotels that we think you're
             going to love.
           </p>
-          {/* <h5>5-Star Hotels</h5>
-          <ul className="list-disc list-inside mt-5">
-            <li>
-              <a href="" target="_blank">
-                Sofitel Phnom Penh Phokeethra
-              </a>
-            </li>
-            <li>Hyatt Regency Phnom Penh</li>
-            <li>
-              <a href="https://www.raffles.com/phnom-penh/" target="_blank">
-                Raffles Hotel Le Royal
-              </a>
-            </li>
-          </ul> */}
           {hotelList.map((item, index) => {
             return (
               <div>
