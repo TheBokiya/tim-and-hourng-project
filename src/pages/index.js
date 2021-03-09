@@ -12,19 +12,22 @@ const IndexPage = () => {
   return (
     <div>
       <Header />
-      <div className="static mt-16 sm:mt-28 animate__animated animate__fadeIn">
-        <StaticImage
-          src="../images/img-cover.png"
-          alt="index-cover-image"
-          placeholder="blurred"
-        />
-        <div className="hidden lg:block absolute bottom-6 left-1/2 text-white">
-          <div class="scroll">
-            <button onClick={() => scrollTo("#bottom-page")}>
-              <div class="mouse">
-                <div class="wheel"></div>
-              </div>
-            </button>
+      <div className="mt-16 sm:mt-0 animate__animated animate__fadeIn">
+        <div className="static h-1/2 sm:h-screen overflow-y-hidden">
+          <StaticImage
+            src="../images/img-cover.png"
+            alt="index-cover-image"
+            placeholder="blurred"
+            layout="fullWidth"
+          />
+          <div className="hidden lg:block absolute bottom-6 left-1/2 text-white">
+            <div class="scroll">
+              <button onClick={() => scrollTo("#bottom-page")}>
+                <div class="mouse">
+                  <div class="wheel"></div>
+                </div>
+              </button>
+            </div>
           </div>
         </div>
         <Layout>

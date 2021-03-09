@@ -9,21 +9,22 @@ const VisingPhnomPenhPage = () => {
   return (
     <div>
       <Header />
-      <div className="static mt-16 sm:mt-28 animate__animated animate__fadeIn">
-        <StaticImage
-          src="../images/img-phnom-penh.jpg"
-          alt="phnom-penh-cover"
-          placeholder="blurred"
-        />
+      <div className="mt-16 sm:mt-40 animate__animated animate__fadeIn">
+        <div className="static h-1/3 overflow-y-hidden">
+          <StaticImage
+            src="../images/img-phnom-penh.jpg"
+            alt="phnom-penh-cover"
+            placeholder="blurred"
+            layout="fullWidth"
+          />
+        </div>
       </div>
       <Layout>
         <div className="py-10">
-          <h1 className="text-primary flex justify-center uppercase tracking-wide text-navy font-sans text-6xl font-black">
+          <h1 className="text-primary text-center uppercase tracking-wide text-navy font-sans text-6xl font-black">
             Phnom Penh
           </h1>
-          <h5 className="flex justify-center uppercase text-gray-300">
-            Pearl of Asia
-          </h5>
+          <h5 className="text-center uppercase text-gray-300">Pearl of Asia</h5>
           <hr className="my-5" />
           <div>
             <p>
