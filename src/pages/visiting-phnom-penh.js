@@ -131,12 +131,39 @@ const VisingPhnomPenhPage = () => {
           </ul>
         </div>
         <div className="py-3">
-          <h2 className="text-gold text-4xl">2. Accomodations</h2>
+          <h2 className="text-gold text-4xl">2. Currencies</h2>
+          <p>
+            Cambodia uses two currencies, US Dollars(USD) and Khmer Riel(KHR).
+            It can be confusing at first however, once you know the conversion
+            rate, you should be good to go. 1 USD converts to about 4,000 KHR.
+            You can use either currency while you're in Cambodia however, we do
+            not use US coins here. So if you give 10 USD to buy an item that
+            costs 9.50 USD, they will give you back your change in KHR of 2,000.
+          </p>
+          <p>
+            A lot of places also accept cashless payment, so you can use your
+            credit/debit cards in majority of the big stores here.
+          </p>
+        </div>
+        <div className="py-3">
+          <h2 className="text-gold text-4xl">3. Accomodations</h2>
           <p>
             There are tons of options to choose from with various price range to
             fit your budget. Below are some of the hotels that we think you're
             going to love.
           </p>
+          <div className="relative">
+            <StaticImage
+              src="../images/img-baitong-hotel.jpg"
+              placeholder="blurred"
+              alt="baitong-hotel"
+            />
+            <div className="absolute bottom-0 left-4">
+              <p className="text-xs text-gray-100 italic opacity-50">
+                Photo Courtesy of Baitong Hotel
+              </p>
+            </div>
+          </div>
           <div className="sm:grid sm:grid-cols-2">
             {hotelList.map((item, index) => {
               return (
@@ -146,7 +173,11 @@ const VisingPhnomPenhPage = () => {
                     {item.hotel.map((j, index) => {
                       return (
                         <li key={index}>
-                          <a href={j.link} target="__blank" className="">
+                          <a
+                            href={j.link}
+                            target="__blank"
+                            className="font-bold italic"
+                          >
                             {j.name}
                             <FontAwesomeIcon
                               icon={faExternalLink}
