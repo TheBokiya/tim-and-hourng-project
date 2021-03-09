@@ -201,6 +201,36 @@ const VisingPhnomPenhPage = () => {
             to relax while you are in Phnom Penh.
           </p>
         </div>
+        <div className="py-3">
+          <h2 className="text-gold text-4xl">4. Transportations</h2>
+          <p>
+            There are different ways you can get around the city with ease. If
+            you expect to travel a lot within the city, I recommend you rent out
+            a private car for the whole day so you would always have someone
+            driving you around throughout the day. If you are looking for a
+            quick way to get around, local and international ride sharing apps
+            are also available in Phnom Penh. The two most popular ones are{" "}
+            <a
+              href="https://www.passapptaxis.com/"
+              target="_blank"
+              className="font-bold italic"
+            >
+              PassApp
+              <FontAwesomeIcon icon={faExternalLink} className="mx-1 text-xs" />
+            </a>
+            and{" "}
+            <a
+              href="https://www.grab.com/kh/"
+              target="_blank"
+              className="font-bold italic"
+            >
+              Grab
+              <FontAwesomeIcon icon={faExternalLink} className="mx-1 text-xs" />
+            </a>
+            , local and internal respectively. You can pick from Tuk Tuks,
+            rickshaws or cars.
+          </p>
+        </div>
       </Layout>
     </div>
   );
