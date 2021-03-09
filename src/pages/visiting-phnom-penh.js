@@ -7,7 +7,7 @@ import { faExternalLink } from "@fortawesome/pro-light-svg-icons";
 
 const hotelList = [
   {
-    level: "5-Star Hotels",
+    level: "Luxury Hotels",
     hotel: [
       {
         name: "Sofitel Phnom Penh Phokeethra",
@@ -21,6 +21,37 @@ const hotelList = [
       {
         name: "Raffles Hotel Le Royal",
         link: "https://www.raffles.com/phnom-penh/",
+      },
+      {
+        name: "The Bale Phnom Penh",
+        link: "https://thebalephnompenh.com/",
+      },
+      {
+        name: "NagaWorld",
+        link: "https://www.nagaworld.com/",
+      },
+    ],
+  },
+  {
+    level: "Value Hotels",
+    hotel: [
+      {
+        name: "Baitong Hotel & Resort",
+        link: "https://www.baitonghotel.asia/",
+      },
+      {
+        name: "Plantation Urban Resort & Spa",
+        link: "https://theplantation.asia/",
+      },
+      {
+        name: "Somerset Norodom Phnom Penh",
+        link:
+          "https://www.agoda.com/en-ca/somerset-norodom-phnom-penh/hotel/phnom-penh-kh.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1844104&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2021-06-18&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&tspTypes=-1&los=2&searchrequestid=e3391656-2e10-4464-9c3d-daa567dccf58",
+      },
+      {
+        name: "Pavilion",
+        link:
+          "https://www.agoda.com/en-ca/pavilion_2/hotel/phnom-penh-kh.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1844104&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2021-06-18&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&tspTypes=8&los=2&searchrequestid=e3391656-2e10-4464-9c3d-daa567dccf58",
       },
     ],
   },
@@ -106,28 +137,38 @@ const VisingPhnomPenhPage = () => {
             fit your budget. Below are some of the hotels that we think you're
             going to love.
           </p>
-          {hotelList.map((item, index) => {
-            return (
-              <div>
-                <h5 key={index}>{item.level}</h5>
-                <ul className="list-disc list-inside mt-5">
-                  {item.hotel.map((j, index) => {
-                    return (
-                      <li key={index}>
-                        <a href={j.link} target="__blank">
-                          {j.name}
-                          <FontAwesomeIcon
-                            icon={faExternalLink}
-                            className="mx-1 text-xs"
-                          />
-                        </a>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            );
-          })}
+          <div className="sm:grid sm:grid-cols-2">
+            {hotelList.map((item, index) => {
+              return (
+                <div className="py-5">
+                  <h3 key={index}>{item.level}</h3>
+                  <ul className="list-disc list-inside mt-5">
+                    {item.hotel.map((j, index) => {
+                      return (
+                        <li key={index}>
+                          <a href={j.link} target="__blank" className="">
+                            {j.name}
+                            <FontAwesomeIcon
+                              icon={faExternalLink}
+                              className="mx-1 text-xs"
+                            />
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+          <p>
+            All of the hotels recommended above are around the city center,
+            except for <span className="italic">The Bale Phnom Penh</span>. It
+            is about 10km from the city center, however it has a very quiet
+            surrounding and amazing view of the Mekong river that is definitely
+            worth it. Definitely worth checking out for couples who are looking
+            to relax while you are in Phnom Penh.
+          </p>
         </div>
       </Layout>
     </div>

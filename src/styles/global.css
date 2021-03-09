@@ -16,11 +16,20 @@ h6 {
 }
 
 a {
-  @apply transition duration-300 ease-in-out text-navy no-underline hover:text-gold;
+  @apply text-navy no-underline transition duration-300 ease-in-out hover:text-gold !important;
 }
 
 p {
   @apply py-3 leading-loose text-gray-default font-light text-xl;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-navy;
 }
 
 .header-link:hover .header-link-icon {
