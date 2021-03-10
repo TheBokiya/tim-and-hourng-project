@@ -13,7 +13,7 @@ const IndexPage = () => {
     <div>
       <Header />
       <div className="mt-16 sm:mt-0 animate__animated animate__fadeIn">
-        <div className="static mt-24 sm:mt-22 max-h-screen h-1/2 overflow-y-hidden">
+        <div className="static max-h-screen h-1/2 overflow-y-hidden">
           <StaticImage
             src="../images/img-cover.png"
             alt="index-cover-image"

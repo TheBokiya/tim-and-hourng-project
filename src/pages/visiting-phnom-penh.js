@@ -4,6 +4,45 @@ import Header from "../components/header";
 import { StaticImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLink } from "@fortawesome/pro-light-svg-icons";
+import ExternalLink from "../components/external-link";
+
+const attractionList = [
+  {
+    name: "Tuol Sleng Genocide Museum",
+    link:
+      "https://www.tripadvisor.com/Attraction_Review-g293940-d324063-Reviews-Tuol_Sleng_Genocide_Museum-Phnom_Penh.html",
+  },
+  {
+    name: "Royal Palace",
+    link:
+      "https://www.tripadvisor.com/Attraction_Review-g293940-d324064-Reviews-Royal_Palace-Phnom_Penh.html",
+  },
+  {
+    name: "Choeng Ek Genocidal Center",
+    link:
+      "https://www.tripadvisor.com/Attraction_Review-g293940-d469300-Reviews-Choeung_Ek_Genocidal_Center-Phnom_Penh.html",
+  },
+  {
+    name: "Wat Phnom",
+    link:
+      "https://www.tripadvisor.com/Attraction_Review-g293940-d469303-Reviews-Wat_Phnom-Phnom_Penh.html",
+  },
+  {
+    name: "National Museum",
+    link:
+      "https://www.tripadvisor.com/Attraction_Review-g293940-d324624-Reviews-National_Museum-Phnom_Penh.html",
+  },
+  {
+    name: "Central Market",
+    link:
+      "https://www.tripadvisor.com/Attraction_Review-g293940-d469301-Reviews-Central_Market-Phnom_Penh.html",
+  },
+  {
+    name: "Bassac Lane",
+    link:
+      "https://www.tripadvisor.com/Attraction_Review-g293940-d10791662-Reviews-Bassac_Lane-Phnom_Penh.html",
+  },
+];
 
 const hotelList = [
   {
@@ -109,17 +148,21 @@ const VisingPhnomPenhPage = () => {
             or not. If you need a visa, you can simply get visa on arrival or
             e-visa prior to your flight. Single entry visa for tourist costs 30
             USD, valid for 30 days. You can check the government's{" "}
-            <a href="https://www.evisa.gov.kh/" target="_blank">
-              website
-              <FontAwesomeIcon icon={faExternalLink} className="mx-1 text-xs" />
-            </a>
+            <ExternalLink link="https://www.evisa.gov.kh/" title="website" />
             for more information about e-visa.
           </p>
           <p>
             The best way to come to Phnom Penh is by plane through Phnom Penh
-            International Airport, located about 10 KM from the city. The most
-            convenient and fastest way to get into the city is by taxi which
-            costs between 9 - 15 USD. Other cheaper options include:
+            International Airport, located about 10 KM from the city. If you are
+            flying over from Canada, we highly recommend either Cathay Pacific
+            or EVA airline. Both airlines have a layover, in Hong Kong for
+            Cathay Pacific or Taiwan for EVA airline. The total flying time is
+            generally around 15 hours.
+          </p>
+          <p>
+            Once you have landed in Phnom Penh, the most convenient and fastest
+            way to get into the city is by taxi which costs between 9 - 15 USD.
+            Other cheaper options include:
           </p>
           <ul className="list-disc list-inside mt-5">
             <li>
@@ -173,17 +216,7 @@ const VisingPhnomPenhPage = () => {
                     {item.hotel.map((j, index) => {
                       return (
                         <li key={index}>
-                          <a
-                            href={j.link}
-                            target="__blank"
-                            className="font-bold italic"
-                          >
-                            {j.name}
-                            <FontAwesomeIcon
-                              icon={faExternalLink}
-                              className="mx-1 text-xs"
-                            />
-                          </a>
+                          <ExternalLink link={j.link} title={j.name} />
                         </li>
                       );
                     })}
@@ -210,24 +243,12 @@ const VisingPhnomPenhPage = () => {
             driving you around throughout the day. If you are looking for a
             quick way to get around, local and international ride sharing apps
             are also available in Phnom Penh. The two most popular ones are{" "}
-            <a
-              href="https://www.passapptaxis.com/"
-              target="_blank"
-              className="font-bold italic"
-            >
-              PassApp
-              <FontAwesomeIcon icon={faExternalLink} className="mx-1 text-xs" />
-            </a>
-            and{" "}
-            <a
-              href="https://www.grab.com/kh/"
-              target="_blank"
-              className="font-bold italic"
-            >
-              Grab
-              <FontAwesomeIcon icon={faExternalLink} className="mx-1 text-xs" />
-            </a>
-            , local and internal respectively. You can pick from Tuk Tuks,
+            <ExternalLink
+              link="https://www.passapptaxis.com/"
+              title="PassApp"
+            />
+            and <ExternalLink link="https://www.grab.com/kh/" title="Grab" />,
+            local and internal respectively. You can pick from Tuk Tuks,
             rickshaws or cars.
           </p>
         </div>
@@ -313,15 +334,122 @@ const VisingPhnomPenhPage = () => {
             There are definitely way more dishes that we think you should try
             but we just cannot list them all. We advise you to keep and open
             mind and be more adventerous. If it looks good, eat it!{" "}
-            <a
-              href="https://edition.cnn.com/travel/article/top-cambodia-foods-intl-hnk/index.html"
-              target="_blank"
-              className="text-bold italic"
-            >
-              Here is a list of 30 Cambodian dishes that visitors should try
-              from CNN Travel.
-              <FontAwesomeIcon icon={faExternalLink} className="mx-1 text-xs" />
-            </a>
+            <ExternalLink
+              link="https://edition.cnn.com/travel/article/top-cambodia-foods-intl-hnk/index.html"
+              title="Here is a list of 30 Cambodian dishes that visitors should try
+              from CNN Travel."
+            />
+          </p>
+        </div>
+        <div className="py-3">
+          <h2 className="text-gold text-4xl">6. Salon Options</h2>
+          <p>
+            We know it can be stressful to find a good salon in a foreign
+            country. We want to recommend you a few salons that can help you
+            look your finest for our event.
+          </p>
+          <p>
+            <ExternalLink
+              link="https://www.facebook.com/LUCKY-SALON-Cambodia-280393978778604/"
+              title="Lucky Salon"
+            />{" "}
+            has multiple locations through out the city. They're usually located
+            inside shopping malls, including Exchange Square and TK Avenue, so
+            it is easy to find them.
+          </p>
+          <p>
+            <ExternalLink
+              link="https://www.facebook.com/tulipsalonnnailspa/"
+              title="Tulip Salon &amp; Nail Spa"
+            />{" "}
+            also has multiple locations through out the city. They can be found
+            in Aeon Mall Sen Sok and Noro Mall.
+          </p>
+          <p>
+            <ExternalLink
+              link="https://www.facebook.com/msalonph"
+              title="M Salon &amp; Spa"
+            />{" "}
+            is our family-owned salon which all of our family members have
+            visited frequently as well. However, it is located a bit further
+            away from the city center. So if you plan to come here, do make sure
+            to give yourself plenty of time to account for the traffic.
+          </p>
+          <p>
+            <ExternalLink
+              link="https://www.facebook.com/Cindy-II-NK-salon-270546779801211"
+              title="Cindy Salon"
+            />{" "}
+            is another famous salon in Phnom Penh. They are located in Boeng
+            Keng Kang 1 (BKK1) area.
+          </p>
+        </div>
+        <div className="py-3">
+          <h2 className="text-gold text-4xl">7. Attractions</h2>
+          <div className="relative mt-5">
+            <StaticImage
+              src="../images/img-museum.jpg"
+              placeholder="blurred"
+              alt="national museum"
+            />
+            <div className="absolute bottom-0 left-4">
+              <p className="text-xs text-gray-100 italic opacity-50">
+                Photo Courtesy of SlickPic
+              </p>
+            </div>
+          </div>
+          <p>
+            We highly recommend that you spend more than in the city other than
+            attending our event. Phnom Penh has a lot to offer especially for
+            first time visitors. Here are some of the things to see around the
+            city.
+          </p>
+          <div className="py-1">
+            {" "}
+            <ul className="list-disc list-inside">
+              {attractionList.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <ExternalLink link={item.link} title={item.name} />
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+        <div className="py-3">
+          <p>
+            Of course, there are plenty more things to see and do in Phnom Penh.
+            If you have more time and would to explore other parts of Cambodia,
+            Siem Reap have to be on your destination list.
+          </p>
+          <div className="relative mt-5">
+            <StaticImage
+              src="../images/img-angkor-wat.jpg"
+              placeholder="blurred"
+              alt="national museum"
+            />
+            <div className="absolute bottom-0 left-4">
+              <p className="text-xs text-gray-100 italic opacity-50">
+                Photo Courtesy of DanFlyingSolo
+              </p>
+            </div>
+          </div>
+          <p>
+            A lot of the ancient temples that you read about are located in Siem
+            Reap and the most mavelous of all, Angkor Wat. It is the largest
+            religious monument in the world by land area covering around 162
+            hectares. We highly recommend you spend at least 3 days in Siem Reap
+            to see all the popular temples. On top of this, December and January
+            are some of the coolest months of the year which is perfect for
+            exploring temples.
+          </p>
+          <p>
+            We do hope you find this page useful in helping you pick your
+            accomodation and plan your visit. We also hope you would enjoy the
+            city as much as our wedding and thank you so much for taking the
+            time to plan your schedule in order to attend our wedding. We both
+            hope to see you very soon.
           </p>
         </div>
       </Layout>
