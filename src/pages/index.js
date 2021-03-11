@@ -20,7 +20,7 @@ const IndexPage = () => {
             placeholder="blurred"
             layout="fullWidth"
           />
-          <div className="hidden lg:block absolute bottom-6 left-1/2 text-white">
+          <div className="hidden 2xl:block absolute inset-x-0 bottom-6 text-white">
             <div class="scroll">
               <button onClick={() => scrollTo("#bottom-page")}>
                 <div class="mouse">
