@@ -204,6 +204,7 @@ const VisingPhnomPenhPage = () => {
                 src="../images/img-baitong-hotel.jpg"
                 placeholder="blurred"
                 alt="baitong-hotel"
+                data-sal="fade"
               />
               <div className="absolute bottom-0 left-4">
                 <p className="text-xs text-gray-100 italic opacity-50">
@@ -271,6 +272,7 @@ const VisingPhnomPenhPage = () => {
                 src="../images/img-baysrop.jpg"
                 placeholder="blurred"
                 alt="lotcha"
+                data-sal="fade"
               />
               <div className="absolute bottom-0 left-4">
                 <p className="text-xs text-gray-100 italic opacity-50">
@@ -302,6 +304,7 @@ const VisingPhnomPenhPage = () => {
                 src="../images/img-kuy-teav.jpg"
                 placeholder="blurred"
                 alt="lotcha"
+                data-sal="fade"
               />
               <div className="absolute bottom-0 left-4">
                 <p className="text-xs text-gray-100 italic opacity-50">
@@ -321,6 +324,7 @@ const VisingPhnomPenhPage = () => {
                 src="../images/img-amok.jpg"
                 placeholder="blurred"
                 alt="lotcha"
+                data-sal="fade"
               />
               <div className="absolute bottom-0 left-4">
                 <p className="text-xs text-gray-100 italic opacity-50">

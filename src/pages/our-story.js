@@ -2,8 +2,6 @@ import React from "react";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import { StaticImage } from "gatsby-plugin-image";
-import ComingSoon from "../components/coming-soon";
-import Button from "../components/button";
 
 const OurStoryPage = () => {
   return (
@@ -22,6 +20,7 @@ const OurStoryPage = () => {
               src="../images/our-story/img-lantern.png"
               placeholder="blurred"
               alt="lantern"
+              className="animate__animated animate__fadeIn"
             />
             <p>
               After years of no communication, it all started with a simple
@@ -33,7 +32,7 @@ const OurStoryPage = () => {
         </Layout>
       </div>
       <Layout>
-        <div className="py-20">
+        <div className="py-20" data-sal="fade">
           <div className="flex justify-center">
             <h1 className="text-center italic text-4xl">
               I swear I couldn't love you more than I do right now, and yet I
@@ -55,7 +54,10 @@ const OurStoryPage = () => {
               alt="tim"
             />
           </div>
-          <div className="bg-white z-50 p-5 lg:p-10 lg:-ml-20 self-center">
+          <div
+            className="bg-white z-50 p-5 lg:p-10 lg:-ml-20 self-center"
+            data-sal="slide-left"
+          >
             <h2 className="font-sans uppercase text-gold">Tim</h2>
             <p>
               Waking up everyday, I still cannot belive that we are together. A
@@ -68,7 +70,10 @@ const OurStoryPage = () => {
           </div>
         </div>
         <div className="mt-32 flex flex-col-reverse lg:grid lg:grid-cols-3">
-          <div className="bg-white z-50 p-5 lg:p-10 lg:-mr-20 self-center">
+          <div
+            className="bg-white z-50 p-5 lg:p-10 lg:-mr-20 self-center"
+            data-sal="slide-right"
+          >
             <h2 className="font-sans uppercase text-gold lg:text-right">
               MuyHourng
             </h2>
