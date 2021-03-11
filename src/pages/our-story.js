@@ -21,6 +21,7 @@ const OurStoryPage = () => {
             <StaticImage
               src="../images/our-story/img-lantern.png"
               placeholder="blurred"
+              alt="lantern"
             />
             <p>
               After years of no communication, it all started with a simple
@@ -51,6 +52,7 @@ const OurStoryPage = () => {
             <StaticImage
               src="../images/our-story/img-tim.png"
               placeholder="blurred"
+              alt="tim"
             />
           </div>
           <div className="bg-white z-50 p-5 lg:p-10 lg:-ml-20 self-center">
@@ -63,6 +65,27 @@ const OurStoryPage = () => {
               spend the rest of my life with you.
             </p>
             <p>Je t'aime, MuyHourng.</p>
+          </div>
+        </div>
+        <div className="mt-32 flex flex-col-reverse lg:grid lg:grid-cols-3">
+          <div className="bg-white z-50 p-5 lg:p-10 lg:-mr-20 self-center">
+            <h2 className="font-sans uppercase text-gold lg:text-right">
+              MuyHourng
+            </h2>
+            <p className="lg:text-right">
+              Waking up everyday, I still cannot belive that we are together. A
+              kind, funny and smart girl, MuyHourng never fails to make me
+              laugh. She picks me back up when I fall down. She supports and
+              challenges me whenever I need an extra push. I cannot wait to
+              spend the rest of my life with you.
+            </p>
+          </div>
+          <div className="lg:col-span-2">
+            <StaticImage
+              src="../images/our-story/img-muyhourng.png"
+              placeholder="blurred"
+              alt="muyhourng"
+            />
           </div>
         </div>
       </Layout>

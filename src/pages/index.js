@@ -21,10 +21,10 @@ const IndexPage = () => {
             layout="fullWidth"
           />
           <div className="hidden sm:block absolute inset-x-0 bottom-6 sm:bottom-10 text-white">
-            <div class="scroll">
+            <div className="scroll">
               <button onClick={() => scrollTo("#bottom-page")}>
-                <div class="mouse">
-                  <div class="wheel"></div>
+                <div className="mouse">
+                  <div className="wheel"></div>
                 </div>
               </button>
             </div>
