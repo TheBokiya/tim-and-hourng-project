@@ -103,7 +103,7 @@ const VisingPhnomPenhPage = () => {
       <div className="mt-16 sm:mt-40 animate__animated animate__fadeIn">
         <div className="static h-1/3 overflow-y-hidden">
           <StaticImage
-            src="../images/img-phnom-penh.jpg"
+            src="../images/visiting-phnom-penh/img-phnom-penh.jpg"
             alt="phnom-penh-cover"
             placeholder="blurred"
             layout="fullWidth"
@@ -201,7 +201,7 @@ const VisingPhnomPenhPage = () => {
             </p>
             <div className="relative">
               <StaticImage
-                src="../images/img-baitong-hotel.jpg"
+                src="../images/visiting-phnom-penh/img-baitong-hotel.jpg"
                 placeholder="blurred"
                 alt="baitong-hotel"
                 data-sal="fade"
@@ -269,7 +269,7 @@ const VisingPhnomPenhPage = () => {
             </p>
             <div className="relative">
               <StaticImage
-                src="../images/img-baysrop.jpg"
+                src="../images/visiting-phnom-penh/img-baysrop.jpg"
                 placeholder="blurred"
                 alt="lotcha"
                 data-sal="fade"
@@ -301,7 +301,7 @@ const VisingPhnomPenhPage = () => {
             </p>
             <div className="relative">
               <StaticImage
-                src="../images/img-kuy-teav.jpg"
+                src="../images/visiting-phnom-penh/img-kuy-teav.jpg"
                 placeholder="blurred"
                 alt="lotcha"
                 data-sal="fade"
@@ -321,7 +321,7 @@ const VisingPhnomPenhPage = () => {
             </p>
             <div className="relative">
               <StaticImage
-                src="../images/img-amok.jpg"
+                src="../images/visiting-phnom-penh/img-amok.jpg"
                 placeholder="blurred"
                 alt="lotcha"
                 data-sal="fade"
@@ -398,7 +398,7 @@ const VisingPhnomPenhPage = () => {
             <h2 className="text-gold text-4xl">7. Attractions</h2>
             <div className="relative mt-5">
               <StaticImage
-                src="../images/img-museum.jpg"
+                src="../images/visiting-phnom-penh/img-museum.jpg"
                 placeholder="blurred"
                 alt="national museum"
               />
@@ -435,7 +435,7 @@ const VisingPhnomPenhPage = () => {
             </p>
             <div className="relative mt-5">
               <StaticImage
-                src="../images/img-angkor-wat.jpg"
+                src="../images/visiting-phnom-penh/img-angkor-wat.jpg"
                 placeholder="blurred"
                 alt="national museum"
               />
