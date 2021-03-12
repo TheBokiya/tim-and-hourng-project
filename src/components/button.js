@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Button = (props) => {
@@ -12,14 +13,16 @@ const Button = (props) => {
   }
 
   return (
-    <button
+    <a
+      href={props.link}
+      target={props.target ? props.target : null}
       className={
-        "text-xs tracking-widest font-semibold font-sans uppercase border-2 px-12 py-5 rounded-none transition duration-300 " +
+        "text-xs tracking-widest font-semibold font-sans no-underline uppercase border-2 px-12 py-5 rounded-none transition duration-300 " +
         buttonStyle
       }
     >
       {props.title}
-    </button>
+    </a>
   );
 };
 

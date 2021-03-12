@@ -2,9 +2,9 @@ import React from "react";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import { StaticImage } from "gatsby-plugin-image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLink } from "@fortawesome/pro-light-svg-icons";
 import ExternalLink from "../components/external-link";
+import { faAirbnb } from "@fortawesome/free-brands-svg-icons";
+import Button from "../components/button";
 
 const attractionList = [
   {
@@ -188,6 +188,15 @@ const VisingPhnomPenhPage = () => {
               2,000.
             </p>
             <p>
+              We recommend exchanging for USD before flying over. If you happen
+              to bring any other currencies, you can exchange them at the
+              airport or any other local currency exchange shops in the city.
+              The exchange rate is quite decent in these small stores. You can
+              also exchange for USD or KHR at the bank however their rate is not
+              so great. You can also withdraw from ATM machines all around the
+              city, but please beware of the service charge.
+            </p>
+            <p>
               A lot of places also accept cashless payment, so you can use your
               credit/debit cards in majority of the big stores here.
             </p>
@@ -238,6 +247,18 @@ const VisingPhnomPenhPage = () => {
               definitely worth it. Definitely worth checking out for couples who
               are looking to relax while you are in Phnom Penh.
             </p>
+            <p>
+              Airbnb is also available in the city if that is something you are
+              looking for.
+            </p>
+            <div className="my-5 flex justify-center">
+              <Button
+                title="Airbnb in Phnom Penh"
+                style="navy"
+                link="https://www.airbnb.com/s/Phnom-Penh--Cambodia/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=april&flexible_trip_dates%5B%5D=march&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&query=Phnom%20Penh%2C%20Cambodia&place_id=ChIJ42tqxz1RCTERuyW1WugOAZw&source=structured_search_input_header&search_type=autocomplete_click"
+                target="_blank"
+              />
+            </div>
           </div>
           <div className="py-3">
             <h2 className="text-gold text-4xl">4. Transportations</h2>
@@ -257,6 +278,11 @@ const VisingPhnomPenhPage = () => {
               local and internal respectively. You can pick from Tuk Tuks,
               rickshaws or cars.
             </p>
+            <p>
+              We also have public buses running around the city. Sadly, our
+              public transportation is not great. The buses are slow and not
+              punctual so we advise against it.
+            </p>
           </div>
           <div className="py-3">
             <h2 className="text-gold text-4xl">5. Food</h2>
@@ -266,6 +292,17 @@ const VisingPhnomPenhPage = () => {
               combined with various textures will sure give you an experiece you
               cannot forget. Below are some of the food that we think you must
               try while you are in Phnom Penh.
+            </p>
+            <p>
+              <span className="text-bold italic">
+                Lot Cha (Stir Fried Short Noodles)
+              </span>{" "}
+              is an absolute must try when you are here. Tim's all-time
+              favourite dish. It is his go-to dish. Lot Cha is a stir fried
+              short noodles dish which can come with either beef or seafood, and
+              make sure you get a crispy fried egg on top. You can eat this at
+              any of the day may it be breakfast, lunch, dinner or even in
+              between meals.
             </p>
             <div className="relative">
               <StaticImage
@@ -280,17 +317,6 @@ const VisingPhnomPenhPage = () => {
                 </p>
               </div>
             </div>
-            <p>
-              <span className="text-bold italic">
-                Lot Cha (Stir Fried Short Noodles)
-              </span>{" "}
-              is an absolute must try when you are here. Tim's all-time
-              favourite dish. It is his go-to dish. Lot Cha is a stir fried
-              short noodles dish which can come with either beef or seafood, and
-              make sure you get a crispy fried egg on top. You can eat this at
-              any of the day may it be breakfast, lunch, dinner or even in
-              between meals.
-            </p>
             <p>
               <span className="text-bold italic">
                 Bay Srop (Grilled Pork with Steamed Rice)
@@ -343,16 +369,79 @@ const VisingPhnomPenhPage = () => {
             <p>
               There are definitely way more dishes that we think you should try
               but we just cannot list them all. We advise you to keep and open
-              mind and be more adventerous. If it looks good, eat it!{" "}
-              <ExternalLink
-                link="https://edition.cnn.com/travel/article/top-cambodia-foods-intl-hnk/index.html"
-                title="Here is a list of 30 Cambodian dishes that visitors should try
-              from CNN Travel."
-              />
+              mind and be more adventerous. If it looks good, eat it!
             </p>
+            <div className="flex justify-center my-5">
+              <Button
+                title="30 Cambodian Dishes to Try"
+                style="navy"
+                link="https://edition.cnn.com/travel/article/top-cambodia-foods-intl-hnk/index.html"
+                target="_blank"
+              />
+            </div>
           </div>
           <div className="py-3">
-            <h2 className="text-gold text-4xl">6. Salon Options</h2>
+            <h2 className="text-gold text-4xl">6. Restaurants &amp; Cafés</h2>
+            <p>
+              Since you now know what dishes to try, we want to recommend you
+              popular eats among locals and tourists.
+            </p>
+            <p>
+              <ExternalLink
+                title="Malis Restaurant"
+                link="https://www.malis-restaurant.com/phnompenh/"
+              />
+              is a fine-dining restaurant specialize in tradtional Cambodian
+              food owned by Cambodia's Master Chef, Luu Meng. They have two
+              locations, one in Phnom Penh and another one in Siem Reap.
+            </p>
+            <p>
+              <ExternalLink
+                title="One More Restaurant"
+                link="https://www.onemorerestaurant.com/"
+              />{" "}
+              is another restaurant serving up traditional Cambodian dishes.
+              This restaurant is a more affordable option if you do not want to
+              go for fine-dining. At the end of the day, Cambodian food is
+              supposed to be cheap and accessible for everyone.
+            </p>
+            <p>
+              <ExternalLink
+                title="Romdeng"
+                link="https://www.tripadvisor.com/Restaurant_Review-g293940-d1217419-Reviews-Romdeng-Phnom_Penh.html"
+              />{" "}
+              is a popular spot for tourists wanting to sample local cuisine.
+              This restaurant serves vegeterian, vegan and glutent free options
+              as well.
+            </p>
+            <p>
+              <ExternalLink
+                title="Brown Coffee"
+                link="https://www.browncoffee.com.kh/"
+              />{" "}
+              is a local coffee chain famous among locals and expats. You can
+              find Brown Coffee shops all around the city. If you enter a mall,
+              there is a good chain that there is a Brown Coffee shop in that
+              mall.
+            </p>
+            <p>
+              We've only recommended top restaurants that serve up traditional
+              Cambodian dishes. There are definitely other options if you want
+              to try other cuisines. And of course, we have Starbucks, Carls
+              Jr., Dominoes and Burger King etc. Except for McDonald's. They are
+              not here yet.
+            </p>
+            <div className="my-5 flex justify-center">
+              <Button
+                title="Restaurants in Phnom Penh"
+                link="https://www.tripadvisor.com/Restaurants-g293940-Phnom_Penh.html"
+                style="navy"
+                target="_blank"
+              />
+            </div>
+          </div>
+          <div className="py-3">
+            <h2 className="text-gold text-4xl">7. Salon Options</h2>
             <p>
               We know it can be stressful to find a good salon in a foreign
               country. We want to recommend you a few salons that can help you
@@ -395,7 +484,7 @@ const VisingPhnomPenhPage = () => {
             </p>
           </div>
           <div className="py-3">
-            <h2 className="text-gold text-4xl">7. Attractions</h2>
+            <h2 className="text-gold text-4xl">8. Attractions</h2>
             <div className="relative mt-5">
               <StaticImage
                 src="../images/visiting-phnom-penh/img-museum.jpg"
@@ -426,6 +515,18 @@ const VisingPhnomPenhPage = () => {
                 })}
               </ul>
             </div>
+          </div>
+          <p>
+            There are also city tour options for those interested spending a
+            full-day or half-day sightseeing.
+          </p>
+          <div className="my-5 flex justify-center">
+            <Button
+              title="City Tours in Phnom Penh"
+              link="https://www.tripadvisor.com/Attraction_Products-g293940-zfc12075-zfg11873-Phnom_Penh.html"
+              style="navy"
+              target="_blank"
+            />
           </div>
           <div className="py-3">
             <p>
