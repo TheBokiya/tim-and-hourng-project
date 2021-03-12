@@ -5,6 +5,10 @@ import { StaticImage } from "gatsby-plugin-image";
 import ExternalLink from "../components/external-link";
 import { faAirbnb } from "@fortawesome/free-brands-svg-icons";
 import Button from "../components/button";
+import GettingHereSegment from "./visiting-phnom-penh/getting-here";
+import CurrenciesSegment from "./visiting-phnom-penh/currencies";
+import AccomodationsSegment from "./visiting-phnom-penh/accomodations";
+import TransportationsSegment from "./visiting-phnom-penh/transportations";
 
 const attractionList = [
   {
@@ -41,58 +45,6 @@ const attractionList = [
     name: "Bassac Lane",
     link:
       "https://www.tripadvisor.com/Attraction_Review-g293940-d10791662-Reviews-Bassac_Lane-Phnom_Penh.html",
-  },
-];
-
-const hotelList = [
-  {
-    level: "Luxury Hotels",
-    hotel: [
-      {
-        name: "Sofitel Phnom Penh Phokeethra",
-        link: "https://www.sofitel-phnompenh-phokeethra.com/",
-      },
-      {
-        name: "Hyatt Regency Phnom Penh",
-        link:
-          "https://www.hyatt.com/en-US/hotel/cambodia/hyatt-regency-phnom-penh/pnhrp",
-      },
-      {
-        name: "Raffles Hotel Le Royal",
-        link: "https://www.raffles.com/phnom-penh/",
-      },
-      {
-        name: "The Bale Phnom Penh",
-        link: "https://thebalephnompenh.com/",
-      },
-      {
-        name: "NagaWorld",
-        link: "https://www.nagaworld.com/",
-      },
-    ],
-  },
-  {
-    level: "Value Hotels",
-    hotel: [
-      {
-        name: "Baitong Hotel & Resort",
-        link: "https://www.baitonghotel.asia/",
-      },
-      {
-        name: "Plantation Urban Resort & Spa",
-        link: "https://theplantation.asia/",
-      },
-      {
-        name: "Somerset Norodom Phnom Penh",
-        link:
-          "https://www.agoda.com/en-ca/somerset-norodom-phnom-penh/hotel/phnom-penh-kh.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1844104&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2021-06-18&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&tspTypes=-1&los=2&searchrequestid=e3391656-2e10-4464-9c3d-daa567dccf58",
-      },
-      {
-        name: "Pavilion",
-        link:
-          "https://www.agoda.com/en-ca/pavilion_2/hotel/phnom-penh-kh.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1844104&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2021-06-18&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&tspTypes=8&los=2&searchrequestid=e3391656-2e10-4464-9c3d-daa567dccf58",
-      },
-    ],
   },
 ];
 
@@ -145,144 +97,19 @@ const VisingPhnomPenhPage = () => {
           </div>
           <div className="py-3">
             <h2 className="text-gold text-4xl">1. Getting Here</h2>
-            <p>
-              Depending on your nationality, you may not need to have a tourist
-              visa. Please check with us if you are unsure whether to get a visa
-              or not. If you need a visa, you can simply get visa on arrival or
-              e-visa prior to your flight. Single entry visa for tourist costs
-              30 USD, valid for 30 days. You can check the government's{" "}
-              <ExternalLink link="https://www.evisa.gov.kh/" title="website" />
-              for more information about e-visa.
-            </p>
-            <p>
-              The best way to come to Phnom Penh is by plane through Phnom Penh
-              International Airport, located about 10 KM from the city. If you
-              are flying over from Canada, we highly recommend either Cathay
-              Pacific or EVA airline. Both airlines have a layover, in Hong Kong
-              for Cathay Pacific or Taiwan for EVA airline. The total flying
-              time is generally around 15 hours.
-            </p>
-            <p>
-              Once you have landed in Phnom Penh, the most convenient and
-              fastest way to get into the city is by taxi which costs between 9
-              - 15 USD. Other cheaper options include:
-            </p>
-            <ul className="list-disc list-inside mt-5">
-              <li>
-                Remorque or Cambodian "tuk tuk" | 7 - 12 USD | Quite popular
-                among the locals and tourists
-              </li>
-              <li>City Bus | ~0.40 USD | Could be slow</li>
-              <li>Shuttle Train | ~30 mins to the city center</li>
-            </ul>
+            <GettingHereSegment />
           </div>
           <div className="py-3">
             <h2 className="text-gold text-4xl">2. Currencies</h2>
-            <p>
-              Cambodia uses two currencies, US Dollars(USD) and Khmer Riel(KHR).
-              It can be confusing at first however, once you know the conversion
-              rate, you should be good to go. 1 USD converts to about 4,000 KHR.
-              You can use either currency while you're in Cambodia however, we
-              do not use US coins here. So if you give 10 USD to buy an item
-              that costs 9.50 USD, they will give you back your change in KHR of
-              2,000.
-            </p>
-            <p>
-              We recommend exchanging for USD before flying over. If you happen
-              to bring any other currencies, you can exchange them at the
-              airport or any other local currency exchange shops in the city.
-              The exchange rate is quite decent in these small stores. You can
-              also exchange for USD or KHR at the bank however their rate is not
-              so great. You can also withdraw from ATM machines all around the
-              city, but please beware of the service charge.
-            </p>
-            <p>
-              A lot of places also accept cashless payment, so you can use your
-              credit/debit cards in majority of the big stores here.
-            </p>
+            <CurrenciesSegment />
           </div>
           <div className="py-3">
             <h2 className="text-gold text-4xl">3. Accomodations</h2>
-            <p>
-              There are tons of options to choose from with various price range
-              to fit your budget. Below are some of the hotels that we think
-              you're going to love.
-            </p>
-            <div className="relative">
-              <StaticImage
-                src="../images/visiting-phnom-penh/img-baitong-hotel.jpg"
-                placeholder="blurred"
-                alt="baitong-hotel"
-                data-sal="fade"
-              />
-              <div className="absolute bottom-0 left-4">
-                <p className="text-xs text-gray-100 italic opacity-50">
-                  Photo Courtesy of Baitong Hotel
-                </p>
-              </div>
-            </div>
-            <div className="sm:grid sm:grid-cols-2">
-              {hotelList.map((item, index) => {
-                return (
-                  <div className="py-5">
-                    <h3 key={index}>{item.level}</h3>
-                    <ul className="list-disc list-inside mt-5">
-                      {item.hotel.map((j, index) => {
-                        return (
-                          <li key={index}>
-                            <ExternalLink link={j.link} title={j.name} />
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
-                );
-              })}
-            </div>
-            <p>
-              All of the hotels recommended above are around the city center,
-              except for <span className="italic">The Bale Phnom Penh</span>. It
-              is about 10km from the city center, however it has a very quiet
-              surrounding and amazing view of the Mekong river that is
-              definitely worth it. Definitely worth checking out for couples who
-              are looking to relax while you are in Phnom Penh.
-            </p>
-            <p>
-              Airbnb is also available in the city if that is something you are
-              looking for.
-            </p>
-            <div className="my-5 flex justify-center">
-              <Button
-                title="Airbnb in Phnom Penh"
-                style="navy"
-                link="https://www.airbnb.com/s/Phnom-Penh--Cambodia/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_dates%5B%5D=april&flexible_trip_dates%5B%5D=march&flexible_trip_lengths%5B%5D=weekend_trip&date_picker_type=calendar&query=Phnom%20Penh%2C%20Cambodia&place_id=ChIJ42tqxz1RCTERuyW1WugOAZw&source=structured_search_input_header&search_type=autocomplete_click"
-                target="_blank"
-              />
-            </div>
+            <AccomodationsSegment />
           </div>
           <div className="py-3">
             <h2 className="text-gold text-4xl">4. Transportations</h2>
-            <p>
-              There are different ways you can get around the city with ease. If
-              you expect to travel a lot within the city, I recommend you rent
-              out a private car for the whole day so you would always have
-              someone driving you around throughout the day. If you are looking
-              for a quick way to get around, local and international ride
-              sharing apps are also available in Phnom Penh. The two most
-              popular ones are{" "}
-              <ExternalLink
-                link="https://www.passapptaxis.com/"
-                title="PassApp"
-              />
-              and <ExternalLink link="https://www.grab.com/kh/" title="Grab" />,
-              local and internal respectively. You can pick from Tuk Tuks,
-              rickshaws or cars.
-            </p>
-            <p>
-              We also have public buses running around the city. Sadly, our
-              public transportation is not great. The buses are slow and not
-              punctual so we advise against it.
-            </p>
+            <TransportationsSegment />
           </div>
           <div className="py-3">
             <h2 className="text-gold text-4xl">5. Food</h2>
