@@ -83,9 +83,9 @@ const AccomodationsSegment = () => {
             <div className="py-5">
               <h3 key={index}>{item.level}</h3>
               <ul className="list-disc list-inside mt-5">
-                {item.hotel.map((j, index) => {
+                {item.hotel.map((j, jindex) => {
                   return (
-                    <li key={index}>
+                    <li key={jindex}>
                       <ExternalLink link={j.link} title={j.name} />
                     </li>
                   );

@@ -57,6 +57,7 @@ const OurStoryPage = () => {
           <div
             className="bg-white z-50 p-5 lg:p-10 lg:-ml-20 self-center"
             data-sal="slide-left"
+            data-sal-duration="500"
           >
             <h2 className="font-sans uppercase text-gold">Tim</h2>
             <p>
@@ -73,6 +74,7 @@ const OurStoryPage = () => {
           <div
             className="bg-white z-50 p-5 lg:p-10 lg:-mr-20 self-center"
             data-sal="slide-right"
+            data-sal-duration="500"
           >
             <h2 className="font-sans uppercase text-gold lg:text-right">
               MuyHourng
