@@ -81,6 +81,12 @@ h6 {
   }
 }
 
+.bg-pattern {
+  opacity: 0.6;
+  background-image: url("../images/img-bg-pattern.png");
+  background-repeat: repeat;
+}
+
 @tailwind base;
 @layer base {
   h1 {

@@ -91,14 +91,17 @@ const EventDetailComponent = (props) => {
 
 const ProgramComponent = (props) => {
   return (
-    <div>
-      <h2 className="text-gold font-sans text-3xl uppercase text-center mt-10">
+    <div className="justify-center sm:flex-shrink w-full sm:w-2/3 bg-white mx-5 py-10 px-5 my-16 border-gold border-2">
+      <h2 className="text-gold font-sans text-2xl uppercase text-center">
         {props.title}
       </h2>
-      <p className="text-gray-400 text-center text-xs mb-5 capitalize">
+      <p className="text-gray-400 text-center text-xs capitalize">
         {props.subtitle}
       </p>
-      <ul>
+      <div className="flex justify-center">
+        <StaticImage src="../images/img-hr-ornament.png" width="150" />
+      </div>
+      <ul className="mt-5">
         {props.programList.map((item, index) => {
           return (
             <li key={index}>
@@ -162,19 +165,23 @@ const WeddingPage = () => {
           />
         </div>
       </Layout>
-      <div className="bg-gray-100">
+      <div className="bg-pattern">
         <Layout>
-          <ProgramComponent
-            title="Morning Ceremony"
-            subtitle="For Families and Close Friends"
-            programList={MorningProgram}
-          />
-          <hr className="my-10" />
-          <ProgramComponent
-            title="Evening Reception"
-            subtitle="all guests"
-            programList={EveningProgram}
-          />
+          <div className="flex justify-center">
+            <ProgramComponent
+              title="Morning Ceremony"
+              subtitle="For Families and Close Friends"
+              programList={MorningProgram}
+            />
+          </div>
+          <hr />
+          <div className="flex justify-center">
+            <ProgramComponent
+              title="Evening Reception"
+              subtitle="all guests"
+              programList={EveningProgram}
+            />
+          </div>
         </Layout>
       </div>
     </div>
