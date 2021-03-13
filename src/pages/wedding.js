@@ -34,7 +34,46 @@ const MorningProgram = [
   },
 ];
 
-const BlockDetail = (props) => {
+const EveningProgram = [
+  {
+    time: "17:30 - 18:30",
+    program: "Guests Arrival",
+  },
+  {
+    time: "18:30 - 18:45",
+    program: "Bride Walks Down the Aisle",
+  },
+  {
+    time: "18:45 - 19:00",
+    program: "Speech from Parents and the couple",
+  },
+  {
+    time: "19:00 - 19:05",
+    program: "Exchange of Vows",
+  },
+  {
+    time: "19:05 - 19:10",
+    program: "First Dance",
+  },
+  {
+    time: "19:10 - 19:15",
+    program: "Champagne Toast",
+  },
+  {
+    time: "19:15 - 20:15",
+    program: "Dinner",
+  },
+  {
+    time: "20:15 - 20:30",
+    program: "Cake Cutting",
+  },
+  {
+    time: "20:30 - Late",
+    program: "Dancing",
+  },
+];
+
+const EventDetailComponent = (props) => {
   return (
     <div className="flex sm:flex-1 sm:flex-col my-3 justify-center">
       <div className="sm:flex sm:justify-center">
@@ -49,6 +88,35 @@ const BlockDetail = (props) => {
           <h5 className="font-sans uppercase sm:text-center">{props.time}</h5>
         )}
       </div>
+    </div>
+  );
+};
+
+const ProgramComponent = (props) => {
+  return (
+    <div>
+      <h2 className="text-gold font-sans text-3xl uppercase text-center mt-10">
+        {props.title}
+      </h2>
+      <p className="text-gray-400 text-center text-xs mb-5 capitalize">
+        {props.subtitle}
+      </p>
+      <ul>
+        {props.programList.map((item, index) => {
+          return (
+            <li key={index}>
+              <div className="p-3 grid grid-cols-2 gap-10">
+                <span className="text-2xl text-right text-gray-400 self-center">
+                  {item.time}
+                </span>
+                <span className="text-2xl text-left self-center capitalize">
+                  {item.program}
+                </span>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };
@@ -72,17 +140,17 @@ const WeddingPage = () => {
       </div>
       <Layout>
         <div className="flex flex-col mx-auto sm:flex-row p-5">
-          <BlockDetail
+          <EventDetailComponent
             title="Sofitel Phokeethra"
             time="Phnom Penh"
             icon={faHotel}
           />
-          <BlockDetail
+          <EventDetailComponent
             title="Morning Ceremony"
             time="06:00 - 12:00"
             icon={faSunrise}
           />
-          <BlockDetail
+          <EventDetailComponent
             title="Evening Reception"
             time="17:30 - 22:00"
             icon={faMoon}
@@ -99,28 +167,17 @@ const WeddingPage = () => {
       </Layout>
       <div className="bg-gray-100">
         <Layout>
-          <h2 className="text-gold font-sans text-3xl uppercase text-center mt-10">
-            Morning Ceremony
-          </h2>
-          <p className="text-gray-400 text-center text-xs mb-5">
-            For Family and Close Friends
-          </p>
-          <ul>
-            {MorningProgram.map((item, index) => {
-              return (
-                <li key={index}>
-                  <div className="p-3 grid grid-cols-2 gap-10">
-                    <span className="text-2xl text-right text-gray-400 self-center">
-                      {item.time}
-                    </span>
-                    <span className="text-2xl text-left self-center">
-                      {item.program}
-                    </span>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
+          <ProgramComponent
+            title="Morning Ceremony"
+            subtitle="For Family and Close Friends"
+            programList={MorningProgram}
+          />
+          <hr className="my-10" />
+          <ProgramComponent
+            title="Evening Reception"
+            subtitle="all guests"
+            programList={EveningProgram}
+          />
         </Layout>
       </div>
     </div>
