@@ -126,16 +126,17 @@ const WeddingPage = () => {
     <div>
       <Header />
       <div className="bg-gray-100 mt-16 sm:mt-44 py-10">
-        <h1 className="text-center text-3xl sm:text-7xl italic text-navy">
+        <h1 className="text-center text-3xl px-5 sm:text-7xl italic text-navy">
           Our Commitment of Love
         </h1>
       </div>
-      <div>
+      <div className="h-1/3">
         <StaticImage
           src="../images/wedding/img-sofitel.jpg"
           placeholder="blurred"
           layout="fullWidth"
           alt="sofitel cover image"
+          height="100%"
         />
       </div>
       <Layout>

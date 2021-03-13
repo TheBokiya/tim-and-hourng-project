@@ -27,7 +27,7 @@ const menuItems = [
   },
 ];
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [small, setSmall] = useState(false);
 
@@ -45,6 +45,7 @@ const Header = ({ siteTitle }) => {
         small ? "opacity-90" : "opacity-100"
       }`}
     >
+      {/* Mobile Menu */}
       <div className="sm:hidden">
         <div className="flex justify-between">
           <h3 className="flex justify-center text-gray-700 uppercase">
@@ -92,6 +93,7 @@ const Header = ({ siteTitle }) => {
         })}
       </div>
 
+      {/* Desktop Menu */}
       <div className="hidden sm:block">
         {!small && (
           <div className="pb-10">
@@ -114,7 +116,7 @@ const Header = ({ siteTitle }) => {
               <Link
                 to={item.link}
                 key={index}
-                className="mx-10 text-navy font-sans uppercase text-xs tracking-widest no-underline header-link"
+                className="md:mx-5 lg:mx-10 text-navy font-sans uppercase text-xs tracking-widest no-underline header-link"
                 activeClassName="text-gold"
               >
                 {item.page}
@@ -131,14 +133,6 @@ const Header = ({ siteTitle }) => {
       </div>
     </header>
   );
-};
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: ``,
 };
 
 export default Header;
