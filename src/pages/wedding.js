@@ -122,12 +122,9 @@ const PartyComponent = (props) => {
         </div>
         {props.members.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               <div className="my-10">
-                <div
-                  key={index}
-                  className="text-base text-center text-gray-400"
-                >
+                <div className="text-base text-center text-gray-400">
                   {item.title}
                 </div>
                 <div>

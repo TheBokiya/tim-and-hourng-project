@@ -4,7 +4,11 @@ import { faExternalLink } from "@fortawesome/pro-light-svg-icons";
 
 const ExternalLink = (props) => {
   return (
-    <a href={props.link} target="_blank" className="text-bold italic">
+    <a
+      href={props.link}
+      target="_blank"
+      className="text-bold italic no-underline"
+    >
       {props.title}
       <FontAwesomeIcon icon={faExternalLink} className="mx-1 text-xs" />
     </a>

@@ -80,8 +80,8 @@ const AccomodationsSegment = () => {
       <div className="sm:grid sm:grid-cols-2">
         {hotelList.map((item, index) => {
           return (
-            <div className="py-5">
-              <h3 key={index}>{item.level}</h3>
+            <div className="py-5" key={index}>
+              <h3>{item.level}</h3>
               <ul className="list-disc list-inside mt-5">
                 {item.hotel.map((j, jindex) => {
                   return (
