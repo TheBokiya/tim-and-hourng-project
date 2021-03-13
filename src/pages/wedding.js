@@ -34,6 +34,25 @@ const MorningProgram = [
   },
 ];
 
+const BlockDetail = (props) => {
+  return (
+    <div className="flex sm:flex-1 sm:flex-col my-3 justify-center">
+      <div className="sm:flex sm:justify-center">
+        <FontAwesomeIcon
+          icon={props.icon}
+          className="text-gold text-xl self-center mr-5 sm:mr-0 sm:mb-5"
+        />
+      </div>
+      <div className="flex flex-col">
+        <h5 className="font-sans uppercase sm:text-center">{props.title}</h5>
+        {props.time && (
+          <h5 className="font-sans uppercase sm:text-center">{props.time}</h5>
+        )}
+      </div>
+    </div>
+  );
+};
+
 const WeddingPage = () => {
   return (
     <div>
@@ -47,36 +66,27 @@ const WeddingPage = () => {
         <StaticImage
           src="../images/wedding/img-sofitel.jpg"
           placeholder="blurred"
+          layout="fullWidth"
           alt="sofitel cover image"
         />
       </div>
       <Layout>
-        <div className="flex p-5">
-          <div className="flex-1 grid justify-items-center">
-            <FontAwesomeIcon
-              icon={faHotel}
-              className="text-gold text-xl mb-5"
-            />
-            <h5 className="font-sans uppercase text-center">
-              Sofitel Phnom Penh Phokeethra
-            </h5>
-          </div>
-          <hr width="1" size="500" className="inline-block" />
-          <div className="flex-1 grid justify-items-center">
-            <FontAwesomeIcon
-              icon={faSunrise}
-              className="text-gold text-xl mb-5"
-            />
-            <h5 className="font-sans uppercase text-center">
-              Morning Ceremony <br /> 06:00 - 12:00
-            </h5>
-          </div>
-          <div className="flex-1 grid justify-items-center">
-            <FontAwesomeIcon icon={faMoon} className="text-gold text-xl mb-5" />
-            <h5 className="font-sans uppercase text-center">
-              Evening Reception <br /> 17:30 - 22:00
-            </h5>
-          </div>
+        <div className="flex flex-col mx-auto sm:flex-row p-5">
+          <BlockDetail
+            title="Sofitel Phokeethra"
+            time="Phnom Penh"
+            icon={faHotel}
+          />
+          <BlockDetail
+            title="Morning Ceremony"
+            time="06:00 - 12:00"
+            icon={faSunrise}
+          />
+          <BlockDetail
+            title="Evening Reception"
+            time="17:30 - 22:00"
+            icon={faMoon}
+          />
         </div>
         <div className="flex justify-center my-10">
           <Button
@@ -98,10 +108,14 @@ const WeddingPage = () => {
           <ul>
             {MorningProgram.map((item, index) => {
               return (
-                <li>
-                  <div className="py-3 grid grid-cols-2 gap-10">
-                    <span className="text-2xl text-right">{item.time}</span>
-                    <span className="text-2xl text-left">{item.program}</span>
+                <li key={index}>
+                  <div className="p-3 grid grid-cols-2 gap-10">
+                    <span className="text-2xl text-right text-gray-400 self-center">
+                      {item.time}
+                    </span>
+                    <span className="text-2xl text-left self-center">
+                      {item.program}
+                    </span>
                   </div>
                 </li>
               );
