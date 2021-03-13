@@ -12,6 +12,19 @@ const FoodSegment = () => {
         Below are some of the food that we think you must try while you are in
         Phnom Penh.
       </p>
+      <div className="relative">
+        <StaticImage
+          src="../../images/visiting-phnom-penh/img-lotcha.jpg"
+          placeholder="blurred"
+          alt="lotcha"
+          data-sal="fade"
+        />
+        <div className="absolute bottom-0 left-4">
+          <p className="text-xs text-gray-100 italic opacity-50">
+            Photo Courtesy of D'Naes
+          </p>
+        </div>
+      </div>
       <p>
         <span className="text-bold italic">
           Lot Cha (Stir Fried Short Noodles)
@@ -24,9 +37,9 @@ const FoodSegment = () => {
       </p>
       <div className="relative">
         <StaticImage
-          src="../images/visiting-phnom-penh/img-baysrop.jpg"
+          src="../../images/visiting-phnom-penh/img-baysrop.jpg"
           placeholder="blurred"
-          alt="lotcha"
+          alt="baysrop"
           data-sal="fade"
         />
         <div className="absolute bottom-0 left-4">
@@ -45,9 +58,9 @@ const FoodSegment = () => {
       </p>
       <div className="relative">
         <StaticImage
-          src="../images/visiting-phnom-penh/img-kuy-teav.jpg"
+          src="../../images/visiting-phnom-penh/img-kuy-teav.jpg"
           placeholder="blurred"
-          alt="lotcha"
+          alt="kuy-teav"
           data-sal="fade"
         />
         <div className="absolute bottom-0 left-4">
@@ -65,9 +78,9 @@ const FoodSegment = () => {
       </p>
       <div className="relative">
         <StaticImage
-          src="../images/visiting-phnom-penh/img-amok.jpg"
+          src="../../images/visiting-phnom-penh/img-amok.jpg"
           placeholder="blurred"
-          alt="lotcha"
+          alt="amok"
           data-sal="fade"
         />
         <div className="absolute bottom-0 left-4">

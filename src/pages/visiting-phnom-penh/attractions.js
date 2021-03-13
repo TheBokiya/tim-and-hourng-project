@@ -46,7 +46,7 @@ const AttractionSegement = () => {
     <div>
       <div className="relative mt-5">
         <StaticImage
-          src="../images/visiting-phnom-penh/img-museum.jpg"
+          src="../../images/visiting-phnom-penh/img-museum.jpg"
           placeholder="blurred"
           alt="national museum"
         />
@@ -92,7 +92,7 @@ const AttractionSegement = () => {
       </p>
       <div className="relative mt-5">
         <StaticImage
-          src="../images/visiting-phnom-penh/img-angkor-wat.jpg"
+          src="../../images/visiting-phnom-penh/img-angkor-wat.jpg"
           placeholder="blurred"
           alt="national museum"
         />

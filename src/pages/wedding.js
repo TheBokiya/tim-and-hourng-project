@@ -105,11 +105,11 @@ const ProgramComponent = (props) => {
         {props.programList.map((item, index) => {
           return (
             <li key={index}>
-              <div className="p-3 grid grid-cols-2 gap-10">
-                <span className="text-2xl text-right text-gray-400 self-center">
+              <div className="p-3 grid grid-cols-1 sm:grid-cols-2 sm:gap-10">
+                <span className="text-base text-center sm:text-right text-gray-400 self-center">
                   {item.time}
                 </span>
-                <span className="text-2xl text-left self-center capitalize">
+                <span className="text-xl text-center sm:text-left self-center capitalize">
                   {item.program}
                 </span>
               </div>
@@ -169,7 +169,7 @@ const WeddingPage = () => {
         <Layout>
           <ProgramComponent
             title="Morning Ceremony"
-            subtitle="For Family and Close Friends"
+            subtitle="For Families and Close Friends"
             programList={MorningProgram}
           />
           <hr className="my-10" />

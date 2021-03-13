@@ -66,7 +66,7 @@ const AccomodationsSegment = () => {
       </p>
       <div className="relative">
         <StaticImage
-          src="../images/visiting-phnom-penh/img-baitong-hotel.jpg"
+          src="../../images/visiting-phnom-penh/img-baitong-hotel.jpg"
           placeholder="blurred"
           alt="baitong-hotel"
           data-sal="fade"
