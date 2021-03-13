@@ -105,11 +105,11 @@ const ProgramComponent = (props) => {
         {props.programList.map((item, index) => {
           return (
             <li key={index}>
-              <div className="p-3 grid grid-cols-1 sm:grid-cols-2 sm:gap-10">
-                <span className="text-base text-center sm:text-right text-gray-400 self-center">
+              <div className="p-3 grid grid-cols-1 sm:grid-cols-4">
+                <span className="text-base text-center sm:col-start-2 sm:text-left text-gray-400 self-center">
                   {item.time}
                 </span>
-                <span className="text-xl text-center sm:text-left self-center capitalize">
+                <span className="text-xl text-center sm:col-span-2 sm:text-left self-center capitalize">
                   {item.program}
                 </span>
               </div>
@@ -174,7 +174,7 @@ const WeddingPage = () => {
               programList={MorningProgram}
             />
           </div>
-          <hr />
+          <hr className="mx-5" />
           <div className="flex justify-center">
             <ProgramComponent
               title="Evening Reception"
