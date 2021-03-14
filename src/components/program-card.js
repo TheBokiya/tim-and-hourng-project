@@ -11,7 +11,7 @@ const ProgramCard = (props) => {
       <h2 className="text-gold font-sans text-2xl uppercase text-center">
         {props.title}
       </h2>
-      <p className="text-gray-400 text-center text-xs capitalize">
+      <p className="text-gray-500 text-center text-xs capitalize">
         {props.subtitle}
       </p>
       <div className="flex justify-center">
@@ -26,7 +26,7 @@ const ProgramCard = (props) => {
           return (
             <li key={index}>
               <div className="p-3 grid grid-cols-1 sm:grid-cols-4">
-                <span className="text-base text-center sm:col-start-2 sm:text-left text-gray-400 self-center">
+                <span className="text-base text-center sm:col-start-2 sm:text-left text-gray-500 self-center">
                   {item.time}
                 </span>
                 <span className="text-xl text-center sm:col-span-2 sm:text-left self-center capitalize">

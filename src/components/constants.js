@@ -183,3 +183,26 @@ export const AttractionList = [
       "https://www.tripadvisor.com/Attraction_Review-g293940-d10791662-Reviews-Bassac_Lane-Phnom_Penh.html",
   },
 ];
+
+export const MenuItems = [
+  {
+    page: "Home",
+    link: "/",
+  },
+  {
+    page: "Pre-Wedding",
+    link: "/pre-wedding",
+  },
+  {
+    page: "Wedding",
+    link: "/wedding",
+  },
+  {
+    page: "Visiting Phnom Penh",
+    link: "/visiting-phnom-penh",
+  },
+  {
+    page: "Our Story",
+    link: "/our-story",
+  },
+];

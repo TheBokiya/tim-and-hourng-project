@@ -1,31 +1,11 @@
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/pro-light-svg-icons";
+import { MenuItems } from "../components/constants";
 
-const menuItems = [
-  {
-    page: "Home",
-    link: "/",
-  },
-  {
-    page: "Pre-Wedding",
-    link: "/pre-wedding",
-  },
-  {
-    page: "Wedding",
-    link: "/wedding",
-  },
-  {
-    page: "Visiting Phnom Penh",
-    link: "/visiting-phnom-penh",
-  },
-  {
-    page: "Our Story",
-    link: "/our-story",
-  },
-];
+const groom = "Tim";
+const bride = "Hourng";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,11 +29,11 @@ const Header = () => {
       <div className="sm:hidden">
         <div className="flex justify-between">
           <h3 className="flex justify-center text-gray-700 uppercase">
-            Bodyka
+            {groom}
             <span className="text-gold text-xs mx-2 self-center title">
               &amp;
             </span>
-            Muy Hourng
+            {bride}
           </h3>
           <button
             type="button"
@@ -79,7 +59,7 @@ const Header = () => {
           (isOpen ? "block" : "hidden") + " pt-5 sm:flex sm:hidden relative"
         }
       >
-        {menuItems.map((item, index) => {
+        {MenuItems.map((item, index) => {
           return (
             <Link
               to={item.link}
@@ -98,11 +78,11 @@ const Header = () => {
         {!small && (
           <div className="pb-10">
             <h1 className="flex justify-center text-gray-700 text-5xl uppercase">
-              Bodyka
+              {groom}
               <span className="text-gold text-lg mx-2 self-center title">
                 &amp;
               </span>
-              Muy Hourng
+              {bride}
             </h1>
 
             <h5 className="flex justify-center text-xs py-3 tracking-widest font-sans uppercase text-gray-300">
@@ -111,7 +91,7 @@ const Header = () => {
           </div>
         )}
         <div className="flex justify-center">
-          {menuItems.map((item, index) => {
+          {MenuItems.map((item, index) => {
             return (
               <Link
                 to={item.link}

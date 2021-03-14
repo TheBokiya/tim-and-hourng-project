@@ -7,10 +7,12 @@ import Layout from "../components/layout";
 import Header from "../components/header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRingsWedding } from "@fortawesome/pro-light-svg-icons";
+import { Helmet } from "react-helmet";
 
 const IndexPage = () => {
   return (
     <div>
+      <Helmet title="Tim & Hourng" />
       <Header />
       <div className="mt-16 animate__animated animate__fadeIn">
         <div className="static h-full overflow-y-hidden">

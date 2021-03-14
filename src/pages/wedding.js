@@ -13,10 +13,12 @@ import {
 import PartyCard from "../components/party-card";
 import ProgramCard from "../components/program-card";
 import InfoBlock from "../components/info-block";
+import { Helmet } from "react-helmet";
 
 const WeddingPage = () => {
   return (
     <div>
+      <Helmet title="Wedding" />
       <Header />
       <div className="bg-gray-100 mt-16 sm:mt-44 py-10">
         <h1 className="text-center text-3xl px-5 sm:text-7xl italic text-navy">
