@@ -78,8 +78,8 @@ const OurStoryPage = ({ data }) => {
             />
           </div>
           <div
-            className="bg-white z-50 p-5 lg:p-10 lg:-ml-20 self-center"
-            data-sal="slide-left"
+            className="bg-white z-10 p-5 lg:p-10 lg:-mr-20 self-center"
+            data-sal="slide-right"
             data-sal-duration="500"
           >
             <h2 className="font-sans uppercase text-gold">Tim</h2>
@@ -90,7 +90,7 @@ const OurStoryPage = ({ data }) => {
               challenges me whenever I need an extra push. I cannot wait to
               spend the rest of my life with you.
             </p>
-            <p>Je t'aime, MuyHourng.</p>
+            <p>Je t'aime, Muy Hourng.</p>
           </div>
         </div>
         <div className="mt-32 flex flex-col-reverse lg:grid lg:grid-cols-3">
@@ -100,7 +100,7 @@ const OurStoryPage = ({ data }) => {
             data-sal-duration="500"
           >
             <h2 className="font-sans uppercase text-gold lg:text-right">
-              MuyHourng
+              Muy Hourng
             </h2>
             <p className="lg:text-right">
               Waking up everyday, I still cannot belive that we are together. A

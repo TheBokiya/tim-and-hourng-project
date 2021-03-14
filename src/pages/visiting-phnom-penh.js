@@ -2,8 +2,6 @@ import React from "react";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import { StaticImage } from "gatsby-plugin-image";
-import ExternalLink from "../components/external-link";
-import Button from "../components/button";
 import GettingHereSegment from "./visiting-phnom-penh/getting-here";
 import CurrenciesSegment from "./visiting-phnom-penh/currencies";
 import AccomodationsSegment from "./visiting-phnom-penh/accomodations";
@@ -36,7 +34,13 @@ const VisingPhnomPenhPage = () => {
             <h5 className="text-center uppercase text-gray-300">
               Pearl of Asia
             </h5>
-            <hr className="my-5" />
+            <div className="flex justify-center my-2">
+              <StaticImage
+                src="../images/img-hr-ornament.png"
+                width={300}
+                alt="page ornament"
+              />
+            </div>
           </div>
           <div className="py-3">
             <p>

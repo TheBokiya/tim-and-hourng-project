@@ -2,44 +2,7 @@ import React from "react";
 import Button from "../../components/button";
 import ExternalLink from "../../components/external-link";
 import { StaticImage } from "gatsby-plugin-image";
-
-const attractionList = [
-  {
-    name: "Tuol Sleng Genocide Museum",
-    link:
-      "https://www.tripadvisor.com/Attraction_Review-g293940-d324063-Reviews-Tuol_Sleng_Genocide_Museum-Phnom_Penh.html",
-  },
-  {
-    name: "Royal Palace",
-    link:
-      "https://www.tripadvisor.com/Attraction_Review-g293940-d324064-Reviews-Royal_Palace-Phnom_Penh.html",
-  },
-  {
-    name: "Choeng Ek Genocidal Center",
-    link:
-      "https://www.tripadvisor.com/Attraction_Review-g293940-d469300-Reviews-Choeung_Ek_Genocidal_Center-Phnom_Penh.html",
-  },
-  {
-    name: "Wat Phnom",
-    link:
-      "https://www.tripadvisor.com/Attraction_Review-g293940-d469303-Reviews-Wat_Phnom-Phnom_Penh.html",
-  },
-  {
-    name: "National Museum",
-    link:
-      "https://www.tripadvisor.com/Attraction_Review-g293940-d324624-Reviews-National_Museum-Phnom_Penh.html",
-  },
-  {
-    name: "Central Market",
-    link:
-      "https://www.tripadvisor.com/Attraction_Review-g293940-d469301-Reviews-Central_Market-Phnom_Penh.html",
-  },
-  {
-    name: "Bassac Lane",
-    link:
-      "https://www.tripadvisor.com/Attraction_Review-g293940-d10791662-Reviews-Bassac_Lane-Phnom_Penh.html",
-  },
-];
+import { AttractionList } from "../../components/constants";
 
 const AttractionSegement = () => {
   return (
@@ -63,7 +26,7 @@ const AttractionSegement = () => {
       </p>
       <div className="py-1">
         <ul className="list-disc list-inside">
-          {attractionList.map((item, index) => {
+          {AttractionList.map((item, index) => {
             return (
               <li key={index}>
                 <ExternalLink link={item.link} title={item.name} />
