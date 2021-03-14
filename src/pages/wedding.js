@@ -94,6 +94,16 @@ const WeddingPage = () => {
           </div>
         </Layout>
       </div>
+      <div className="bg-gray-100">
+        <Layout>
+          <div className="flex flex-col py-10 mx-5">
+            <h5 className="text-gray-400 text-center">Social Media Tag</h5>
+            <h1 className="text-gold text-center text-5xl sm:text-7xl my-5">
+              #timandhourng
+            </h1>
+          </div>
+        </Layout>
+      </div>
     </div>
   );
 };
