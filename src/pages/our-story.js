@@ -2,8 +2,31 @@ import React from "react";
 import Layout from "../components/layout";
 import Header from "../components/header";
 import { StaticImage } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const OurStoryPage = () => {
+export const imgQuery = graphql`
+  query imgQuery {
+    allFile(
+      filter: {
+        sourceInstanceName: { eq: "images" }
+        relativeDirectory: { eq: "our-story" }
+      }
+    ) {
+      edges {
+        node {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, width: 300, height: 300)
+          }
+          name
+        }
+      }
+    }
+  }
+`;
+
+const OurStoryPage = ({ data }) => {
   return (
     <div>
       <Header></Header>
@@ -94,6 +117,13 @@ const OurStoryPage = () => {
               alt="muyhourng"
             />
           </div>
+        </div>
+        <div>
+          {data.allFile.edges.map((item, index) => {
+            const image = getImage(item.node);
+            console.log(image);
+            return <GatsbyImage image={image} alt={item.node.name} />;
+          })}
         </div>
       </Layout>
     </div>
