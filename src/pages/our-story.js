@@ -10,7 +10,7 @@ export const imgQuery = graphql`
     allFile(
       filter: {
         sourceInstanceName: { eq: "images" }
-        relativeDirectory: { eq: "our-story" }
+        relativeDirectory: { eq: "gallery" }
       }
     ) {
       edges {
@@ -95,7 +95,7 @@ const OurStoryPage = ({ data }) => {
         </div>
         <div className="mt-32 flex flex-col-reverse lg:grid lg:grid-cols-3">
           <div
-            className="bg-white z-50 p-5 lg:p-10 lg:-mr-20 self-center"
+            className="bg-white z-10 p-5 lg:p-10 lg:-mr-20 self-center"
             data-sal="slide-right"
             data-sal-duration="500"
           >
@@ -118,14 +118,25 @@ const OurStoryPage = ({ data }) => {
             />
           </div>
         </div>
-        <div>
+      </Layout>
+      <div className="bg-gray-100 mt-16">
+        <h1 className="font-sans text-6xl text-navy uppercase py-16 mx-5 md:px-16 lg:px-28 xl:px-44">
+          Our <br /> memories
+        </h1>
+        <div className="flex flex-wrap">
           {data.allFile.edges.map((item, index) => {
             const image = getImage(item.node);
-            console.log(image);
-            return <GatsbyImage image={image} alt={item.node.name} />;
+            return (
+              <GatsbyImage
+                key={index}
+                image={image}
+                alt={item.node.name}
+                className="flex-grow w-1/4 h-1/4 sm:w-1/6 sm:h-1/6 opacity-75"
+              />
+            );
           })}
         </div>
-      </Layout>
+      </div>
     </div>
   );
 };

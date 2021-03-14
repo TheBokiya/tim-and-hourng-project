@@ -41,7 +41,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 w-screen z-10 bg-white p-5 transition duration-300 ease-in-out ${
+      className={`fixed top-0 w-screen z-50 bg-white p-5 transition duration-300 ease-in-out ${
         small ? "opacity-90" : "opacity-100"
       }`}
     >
