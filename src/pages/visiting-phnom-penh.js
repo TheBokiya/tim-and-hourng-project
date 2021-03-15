@@ -73,31 +73,45 @@ const VisingPhnomPenhPage = () => {
             <GettingHereSegment />
           </div>
           <div className="py-3">
-            <h2 className="text-gold text-4xl">2. Currencies</h2>
+            <h2 className="text-gold text-4xl" id="currencies">
+              2. Currencies
+            </h2>
             <CurrenciesSegment />
           </div>
           <div className="py-3">
-            <h2 className="text-gold text-4xl">3. Accomodations</h2>
+            <h2 className="text-gold text-4xl" id="accomodations">
+              3. Accomodations
+            </h2>
             <AccomodationsSegment />
           </div>
           <div className="py-3">
-            <h2 className="text-gold text-4xl">4. Transportations</h2>
+            <h2 className="text-gold text-4xl" id="transportations">
+              4. Transportations
+            </h2>
             <TransportationsSegment />
           </div>
           <div className="py-3">
-            <h2 className="text-gold text-4xl">5. Food</h2>
+            <h2 className="text-gold text-4xl" id="food">
+              5. Food
+            </h2>
             <FoodSegment />
           </div>
           <div className="py-3">
-            <h2 className="text-gold text-4xl">6. Restaurants &amp; Cafés</h2>
+            <h2 className="text-gold text-4xl" id="restaurants-and-cafes">
+              6. Restaurants &amp; Cafés
+            </h2>
             <RestaurantsAndCafesSegement />
           </div>
           <div className="py-3">
-            <h2 className="text-gold text-4xl">7. Salon Options</h2>
+            <h2 className="text-gold text-4xl" id="salon-options">
+              7. Salon Options
+            </h2>
             <SalonOptions />
           </div>
           <div className="py-3">
-            <h2 className="text-gold text-4xl">8. Attractions</h2>
+            <h2 className="text-gold text-4xl" id="attractions">
+              8. Attractions
+            </h2>
             <AttractionSegement />
           </div>
         </div>

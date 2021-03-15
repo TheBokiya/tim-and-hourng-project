@@ -211,6 +211,30 @@ export const MenuItems = [
         page: "Currencies",
         anchor: visingPhnomPenhLink + "#currencies",
       },
+      {
+        page: "Accomodations",
+        anchor: visingPhnomPenhLink + "#accomodations",
+      },
+      {
+        page: "Transportations",
+        anchor: visingPhnomPenhLink + "#transportations",
+      },
+      {
+        page: "Food",
+        anchor: visingPhnomPenhLink + "#food",
+      },
+      {
+        page: "Restaurants & Cafés",
+        anchor: visingPhnomPenhLink + "#restaurants-and-cafes",
+      },
+      {
+        page: "Salon Options",
+        anchor: visingPhnomPenhLink + "#salon-options",
+      },
+      {
+        page: "Attractions",
+        anchor: visingPhnomPenhLink + "#attractions",
+      },
     ],
   },
   {
