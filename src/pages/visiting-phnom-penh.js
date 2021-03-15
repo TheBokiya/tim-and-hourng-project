@@ -10,12 +10,12 @@ import FoodSegment from "./visiting-phnom-penh/food";
 import RestaurantsAndCafesSegement from "./visiting-phnom-penh/restaurants-and-cafes";
 import SalonOptions from "./visiting-phnom-penh/salon-options";
 import AttractionSegement from "./visiting-phnom-penh/attractions";
-import { Helmet } from "react-helmet";
+import SEO from "../components/seo";
 
 const VisingPhnomPenhPage = () => {
   return (
     <div>
-      <Helmet title="Visiting Phnom Penh" />
+      <SEO title="Visiting Phnom Penh" />
       <Header />
       <div className="mt-16 sm:mt-40 animate__animated animate__fadeIn">
         <div className="static h-1/3 overflow-y-hidden">
