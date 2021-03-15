@@ -4,7 +4,7 @@ import Header from "../components/header";
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { Helmet } from "react-helmet";
+import SEO from "../components/seo";
 
 export const imgQuery = graphql`
   query imgQuery {
@@ -30,7 +30,7 @@ export const imgQuery = graphql`
 const OurStoryPage = ({ data }) => {
   return (
     <div>
-      <Helmet title="Our Story" />
+      <SEO title="Our Story" />
       <Header></Header>
       <div className="bg-navy px-5 mt-16 sm:mt-44">
         <Layout>
