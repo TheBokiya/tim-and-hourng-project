@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Tim & Hourng`,
-    description: `Our Commitment of Love`,
+    description: `Our Commitment to Love`,
     author: `@thebokiya`,
   },
   plugins: [

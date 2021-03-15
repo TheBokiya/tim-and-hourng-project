@@ -35,9 +35,12 @@ const IndexPage = () => {
         <Layout>
           <div className="px-5">
             <div className="py-10">
-              <h1 className="text-primary text-center flex justify-center uppercase tracking-wide text-navy font-black pb-5">
-                Welcome to our wedding site
+              <h1 className="text-primary text-center flex justify-center uppercase tracking-wide text-navy">
+                Le mariage de Tim et Hourng
               </h1>
+              <h3 className="text-primary text-center flex justify-center uppercase tracking-wide text-gray-400 text-base pb-5">
+                Notre engagement à aimer
+              </h3>
               <div className="flex justify-center">
                 <FontAwesomeIcon
                   icon={faRingsWedding}

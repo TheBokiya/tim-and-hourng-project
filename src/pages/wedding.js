@@ -22,7 +22,7 @@ const WeddingPage = () => {
       <Header />
       <div className="bg-gray-100 mt-16 sm:mt-44 py-10">
         <h1 className="text-center text-3xl px-5 sm:text-7xl italic text-navy">
-          Our Commitment of Love
+          Our Commitment to Love
         </h1>
       </div>
       <div className="h-1/3">

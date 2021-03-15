@@ -1,9 +1,9 @@
 {
   "name": "tim-and-muyhourng",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Tim & Hourng wedding site.",
+  "version": "1.0.0",
+  "author": "@thebokiya",
   "dependencies": {
     "@fontsource/alice": "^4.2.2",
     "@fontsource/cormorant-garamond": "^4.2.1",
