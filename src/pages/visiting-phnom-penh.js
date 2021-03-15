@@ -67,7 +67,9 @@ const VisingPhnomPenhPage = () => {
             </p>
           </div>
           <div className="py-3">
-            <h2 className="text-gold text-4xl">1. Getting Here</h2>
+            <h2 className="text-gold text-4xl" id="getting-here">
+              1. Getting Here
+            </h2>
             <GettingHereSegment />
           </div>
           <div className="py-3">

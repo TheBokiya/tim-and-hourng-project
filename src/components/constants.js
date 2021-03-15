@@ -1,3 +1,5 @@
+const visingPhnomPenhLink = "/visiting-phnom-penh";
+
 export const GroomSide = [
   {
     title: "Parents",
@@ -199,7 +201,17 @@ export const MenuItems = [
   },
   {
     page: "Visiting Phnom Penh",
-    link: "/visiting-phnom-penh",
+    link: visingPhnomPenhLink,
+    sub: [
+      {
+        page: "Getting Here",
+        anchor: visingPhnomPenhLink + "#getting-here",
+      },
+      {
+        page: "Currencies",
+        anchor: visingPhnomPenhLink + "#currencies",
+      },
+    ],
   },
   {
     page: "Our Story",

@@ -15,8 +15,12 @@ h6 {
   font-family: "Alice", serif;
 }
 
-a {
+a, button {
   @apply no-underline transition duration-300 ease-in-out hover:text-gold;
+}
+
+.header-link {
+  @apply md:mx-5 lg:mx-10 text-navy font-sans uppercase text-xs tracking-widest no-underline;
 }
 
 p {

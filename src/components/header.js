@@ -1,15 +1,34 @@
 import { Link } from "gatsby";
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/pro-light-svg-icons";
+import {
+  faBars,
+  faTimes,
+  faChevronDown,
+} from "@fortawesome/pro-light-svg-icons";
 import { MenuItems } from "../components/constants";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const groom = "Tim";
 const bride = "Hourng";
 
 const Header = () => {
+  const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
+  const [delayHandler, setDelayHandler] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const [small, setSmall] = useState(false);
+
+  const handleMouseLeave = () => {
+    setDelayHandler(
+      setTimeout(() => {
+        setDropdownIsOpen(false);
+      }, 500)
+    );
+  };
+
+  const handleMouseOver = () => {
+    clearTimeout(delayHandler);
+  };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -93,20 +112,50 @@ const Header = () => {
         <div className="flex justify-center">
           {MenuItems.map((item, index) => {
             return (
-              <Link
-                to={item.link}
-                key={index}
-                className="md:mx-5 lg:mx-10 text-navy font-sans uppercase text-xs tracking-widest no-underline header-link"
-                activeClassName="text-gold"
-              >
-                {item.page}
-                {/* {item.page === "Wedding" && (
-                  <FontAwesomeIcon
-                    icon={faChevronDown}
-                    className="ml-2 header-link-icon"
-                  />
-                )} */}
-              </Link>
+              <div>
+                {item.page === "Visiting Phnom Penh" ? (
+                  <div className="relative">
+                    <Link
+                      to={item.link}
+                      className="header-link"
+                      onMouseOver={() => setDropdownIsOpen(true)}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <span>{item.page}</span>
+                      <FontAwesomeIcon
+                        icon={faChevronDown}
+                        className="ml-2 header-link-icon"
+                      />
+                    </Link>
+                    <div
+                      className={
+                        (dropdownIsOpen ? "block" : "hidden") +
+                        " absolute bg-white mt-5 lg:px-10 lg:pb-5"
+                      }
+                      onMouseOver={handleMouseOver}
+                      onMouseLeave={() => setDropdownIsOpen(false)}
+                    >
+                      <ul>
+                        {item.sub?.map((j, index) => {
+                          return (
+                            <li className="py-2 font-sans text-xs uppercase tracking-widest">
+                              <AnchorLink
+                                to={j.anchor}
+                                title={j.page}
+                                className="font-sans no-underline text-xs text-navy"
+                              />
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                ) : (
+                  <Link to={item.link} key={index} className="header-link">
+                    {item.page}
+                  </Link>
+                )}
+              </div>
             );
           })}
         </div>
