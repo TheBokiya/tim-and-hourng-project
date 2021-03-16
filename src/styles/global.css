@@ -20,7 +20,7 @@ a, button {
 }
 
 .header-link {
-  @apply md:mx-5 lg:mx-10 text-navy font-sans uppercase text-xs tracking-widest no-underline;
+  @apply md:mx-5 lg:mx-10 text-navy font-sans uppercase text-base sm:text-xs tracking-widest no-underline;
 }
 
 p {

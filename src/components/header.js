@@ -47,13 +47,15 @@ const Header = () => {
       {/* Mobile Menu */}
       <div className="sm:hidden">
         <div className="flex justify-between">
-          <h3 className="flex justify-center text-gray-700 uppercase">
-            {groom}
-            <span className="text-gold text-xs mx-2 self-center title">
-              &amp;
-            </span>
-            {bride}
-          </h3>
+          <Link to="/" className="no-underline">
+            <h3 className="flex justify-center text-gray-700 uppercase">
+              {groom}
+              <span className="text-gold text-xs mx-2 self-center title">
+                &amp;
+              </span>
+              {bride}
+            </h3>
+          </Link>
           <button
             type="button"
             className="focus:outline-none"
@@ -73,6 +75,7 @@ const Header = () => {
         </div>
       </div>
 
+      {/* Hamburger menu */}
       <div
         className={
           (hamburgerIsOpen ? "block" : "hidden") +
@@ -81,14 +84,56 @@ const Header = () => {
       >
         {MenuItems.map((item, index) => {
           return (
-            <Link
-              to={item.link}
-              key={index}
-              className="block text-navy text-xs my-5 no-underline tracking-wider font-medium font-sans uppercase"
-              activeClassName="text-gold"
-            >
-              {item.page}
-            </Link>
+            <div className="py-2">
+              {item.sub ? (
+                <div>
+                  <Link
+                    to={item.link}
+                    className="header-link"
+                    activeClassName="text-gold"
+                  >
+                    <span>{item.page}</span>
+                  </Link>
+                  <FontAwesomeIcon
+                    icon={faChevronDown}
+                    className={
+                      "ml-2 transition duration-300 transform " +
+                      (dropdownIsOpen ? "-rotate-180 text-gold" : null)
+                    }
+                    onMouseUp={() => setDropdownIsOpen(!dropdownIsOpen)}
+                  />
+                  <div
+                    className={(dropdownIsOpen ? "block" : "hidden") + " ml-10"}
+                  >
+                    <ul>
+                      {item.sub?.map((j, index) => {
+                        return (
+                          <li
+                            className="py-4 font-sans text-xs uppercase tracking-widest"
+                            key={index}
+                          >
+                            <AnchorLink
+                              to={j.anchor}
+                              title={j.page}
+                              className="font-sans no-underline text-xs text-navy"
+                            />
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  to={item.link}
+                  key={index}
+                  className="header-link"
+                  activeClassName="text-gold"
+                >
+                  {item.page}
+                </Link>
+              )}
+            </div>
           );
         })}
       </div>
@@ -97,13 +142,15 @@ const Header = () => {
       <div className="hidden sm:block">
         {!menuIsSmall && (
           <div className="pb-10">
-            <h1 className="flex justify-center text-gray-700 text-5xl uppercase">
-              {groom}
-              <span className="text-gold text-lg mx-2 self-center title">
-                &amp;
-              </span>
-              {bride}
-            </h1>
+            <Link to="/" className="no-underline">
+              <h1 className="flex justify-center text-gray-700 text-5xl uppercase">
+                {groom}
+                <span className="text-gold text-lg mx-2 self-center title">
+                  &amp;
+                </span>
+                {bride}
+              </h1>
+            </Link>
 
             <h5 className="flex justify-center text-xs py-3 tracking-widest font-sans uppercase text-gray-300">
               Phnom Penh | 2021
@@ -123,6 +170,7 @@ const Header = () => {
                       }
                       onMouseOver={() => setDropdownIsOpen(true)}
                       onMouseLeave={handleMouseLeave}
+                      activeClassName="text-gold"
                     >
                       <span>{item.page}</span>
                       <FontAwesomeIcon
@@ -131,7 +179,6 @@ const Header = () => {
                           "ml-2 transition duration-300 transform " +
                           (dropdownIsOpen ? "-rotate-180" : null)
                         }
-                        // className="ml-2 transform -rotate-180"
                       />
                     </Link>
                     <div
@@ -158,7 +205,12 @@ const Header = () => {
                     </div>
                   </div>
                 ) : (
-                  <Link to={item.link} key={index} className="header-link">
+                  <Link
+                    to={item.link}
+                    key={index}
+                    className="header-link"
+                    activeClassName="text-gold"
+                  >
                     {item.page}
                   </Link>
                 )}
