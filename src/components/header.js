@@ -15,14 +15,14 @@ const bride = "Hourng";
 const Header = () => {
   const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
   const [delayHandler, setDelayHandler] = useState(null);
-  const [isOpen, setIsOpen] = useState(false);
-  const [small, setSmall] = useState(false);
+  const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
+  const [menuIsSmall, setMenuIsSmall] = useState(false);
 
   const handleMouseLeave = () => {
     setDelayHandler(
       setTimeout(() => {
         setDropdownIsOpen(false);
-      }, 500)
+      }, 250)
     );
   };
 
@@ -33,7 +33,7 @@ const Header = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () =>
-        setSmall(window.pageYOffset > 200)
+        setMenuIsSmall(window.pageYOffset > 200)
       );
     }
   }, []);
@@ -41,7 +41,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 w-screen z-50 bg-white p-5 transition duration-300 ease-in-out ${
-        small ? "opacity-90" : "opacity-100"
+        menuIsSmall ? "opacity-95" : "opacity-100"
       }`}
     >
       {/* Mobile Menu */}
@@ -58,16 +58,16 @@ const Header = () => {
             type="button"
             className="focus:outline-none"
             onClick={() => {
-              setIsOpen(!isOpen);
+              setHamburgerIsOpen(!hamburgerIsOpen);
             }}
           >
             <FontAwesomeIcon
               icon={faBars}
-              className={(!isOpen ? "block" : "hidden") + " text-navy"}
+              className={(!hamburgerIsOpen ? "block" : "hidden") + " text-navy"}
             />
             <FontAwesomeIcon
               icon={faTimes}
-              className={(isOpen ? "block" : "hidden") + " text-navy"}
+              className={(hamburgerIsOpen ? "block" : "hidden") + " text-navy"}
             />
           </button>
         </div>
@@ -75,7 +75,8 @@ const Header = () => {
 
       <div
         className={
-          (isOpen ? "block" : "hidden") + " pt-5 sm:flex sm:hidden relative"
+          (hamburgerIsOpen ? "block" : "hidden") +
+          " pt-5 sm:flex sm:hidden relative"
         }
       >
         {MenuItems.map((item, index) => {
@@ -94,7 +95,7 @@ const Header = () => {
 
       {/* Desktop Menu */}
       <div className="hidden sm:block">
-        {!small && (
+        {!menuIsSmall && (
           <div className="pb-10">
             <h1 className="flex justify-center text-gray-700 text-5xl uppercase">
               {groom}
@@ -113,18 +114,24 @@ const Header = () => {
           {MenuItems.map((item, index) => {
             return (
               <div>
-                {item.page === "Visiting Phnom Penh" ? (
+                {item.sub ? (
                   <div className="relative">
                     <Link
                       to={item.link}
-                      className="header-link"
+                      className={
+                        "header-link " + (dropdownIsOpen ? "text-gold" : null)
+                      }
                       onMouseOver={() => setDropdownIsOpen(true)}
                       onMouseLeave={handleMouseLeave}
                     >
                       <span>{item.page}</span>
                       <FontAwesomeIcon
                         icon={faChevronDown}
-                        className="ml-2 header-link-icon"
+                        className={
+                          "ml-2 transition duration-300 transform " +
+                          (dropdownIsOpen ? "-rotate-180" : null)
+                        }
+                        // className="ml-2 transform -rotate-180"
                       />
                     </Link>
                     <div

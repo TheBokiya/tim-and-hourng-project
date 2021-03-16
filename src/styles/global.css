@@ -37,7 +37,7 @@ h6 {
 }
 
 .header-link:hover .header-link-icon {
-  @apply transition duration-300 transform -rotate-180;
+  @apply transition duration-300 transform;
 }
 
 .scroll {
