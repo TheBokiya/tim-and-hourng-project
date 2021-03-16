@@ -86,7 +86,7 @@ const Header = () => {
           return (
             <div className="py-2">
               {item.sub ? (
-                <div>
+                <div className="py-2">
                   <Link
                     to={item.link}
                     className="header-link"
@@ -109,7 +109,7 @@ const Header = () => {
                       {item.sub?.map((j, index) => {
                         return (
                           <li
-                            className="py-4 font-sans text-xs uppercase tracking-widest"
+                            className="py-2 font-sans text-xs uppercase tracking-widest"
                             key={index}
                           >
                             <AnchorLink
@@ -124,14 +124,16 @@ const Header = () => {
                   </div>
                 </div>
               ) : (
-                <Link
-                  to={item.link}
-                  key={index}
-                  className="header-link"
-                  activeClassName="text-gold"
-                >
-                  {item.page}
-                </Link>
+                <div className="py-2">
+                  <Link
+                    to={item.link}
+                    key={index}
+                    className="header-link"
+                    activeClassName="text-gold"
+                  >
+                    {item.page}
+                  </Link>
+                </div>
               )}
             </div>
           );
