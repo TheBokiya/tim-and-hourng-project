@@ -13,3 +13,7 @@ $ npm install
 ```shell
 $ gatsby develop
 ```
+
+## Deployment
+
+This project is deployed on Vercel.
