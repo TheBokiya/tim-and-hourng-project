@@ -80,7 +80,7 @@ const OurStoryPage = ({ data }) => {
             />
           </div>
           <div
-            className="bg-white z-10 p-5 lg:p-10 lg:-mr-20 self-center"
+            className="bg-white z-10 p-5 lg:p-10 lg:-ml-20 self-center"
             data-sal="slide-right"
             data-sal-duration="500"
           >

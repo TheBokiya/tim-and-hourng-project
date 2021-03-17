@@ -181,12 +181,13 @@ const Header = () => {
                           "ml-2 transition duration-300 transform " +
                           (dropdownIsOpen ? "-rotate-180" : null)
                         }
+                        onMouseUp={() => setDropdownIsOpen(!dropdownIsOpen)}
                       />
                     </Link>
                     <div
                       className={
                         (dropdownIsOpen ? "block" : "hidden") +
-                        " absolute bg-white mt-5 lg:px-10 lg:pb-5"
+                        " absolute bg-white mt-5 sm:px-10 sm:pb-5"
                       }
                       onMouseOver={handleMouseOver}
                       onMouseLeave={() => setDropdownIsOpen(false)}
