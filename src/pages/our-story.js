@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/layout";
-import Header from "../components/header";
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
@@ -29,11 +28,10 @@ export const imgQuery = graphql`
 
 const OurStoryPage = ({ data }) => {
   return (
-    <div>
+    <Layout>
       <SEO title="Our Story" />
-      <Header></Header>
       <div className="bg-navy px-5 mt-16 sm:mt-44">
-        <Layout>
+        <div className="custom-container">
           <div className="bg-white p-4 sm:p-10">
             <h1 className="font-sans uppercase text-4xl">Our Beginning</h1>
             <p className="pt-10">
@@ -54,9 +52,9 @@ const OurStoryPage = ({ data }) => {
               then I asked her out. She said yes. The rest is history.
             </p>
           </div>
-        </Layout>
+        </div>
       </div>
-      <Layout>
+      <div className="custom-container">
         <div className="py-20" data-sal="fade">
           <div className="flex justify-center">
             <h1 className="text-center italic text-4xl">
@@ -120,7 +118,7 @@ const OurStoryPage = ({ data }) => {
             />
           </div>
         </div>
-      </Layout>
+      </div>
       <div className="bg-gray-100 mt-16">
         <h1 className="font-sans text-6xl text-navy uppercase py-16 mx-5 md:px-16 lg:px-28 xl:px-44">
           Our <br /> memories
@@ -139,7 +137,7 @@ const OurStoryPage = ({ data }) => {
           })}
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

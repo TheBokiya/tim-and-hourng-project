@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/layout";
-import Header from "../components/header";
 import { StaticImage } from "gatsby-plugin-image";
 import GettingHereSegment from "./visiting-phnom-penh/getting-here";
 import CurrenciesSegment from "./visiting-phnom-penh/currencies";
@@ -14,9 +13,8 @@ import SEO from "../components/seo";
 
 const VisingPhnomPenhPage = () => {
   return (
-    <div>
+    <Layout>
       <SEO title="Visiting Phnom Penh" />
-      <Header />
       <div className="mt-16 sm:mt-40 animate__animated animate__fadeIn">
         <div className="static h-1/3 overflow-y-hidden">
           <StaticImage
@@ -27,7 +25,7 @@ const VisingPhnomPenhPage = () => {
           />
         </div>
       </div>
-      <Layout>
+      <div className="custom-container">
         <div className="px-5">
           <div className="py-10">
             <h1 className="text-primary text-center uppercase tracking-wide text-navy font-sans text-6xl font-black">
@@ -115,8 +113,8 @@ const VisingPhnomPenhPage = () => {
             <AttractionSegement />
           </div>
         </div>
-      </Layout>
-    </div>
+      </div>
+    </Layout>
   );
 };
 

@@ -11,11 +11,16 @@ h6 {
   font-family: "Cormorant Garamond", serif;
 }
 
+.custom-container {
+  @apply container mx-auto md:px-24 lg:px-36 xl:px-48;
+}
+
 .title {
   font-family: "Alice", serif;
 }
 
-a, button {
+a,
+button {
   @apply no-underline transition duration-300 ease-in-out hover:text-gold;
 }
 

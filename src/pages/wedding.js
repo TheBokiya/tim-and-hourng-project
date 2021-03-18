@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/layout";
-import Header from "../components/header";
 import Button from "../components/button";
 import { StaticImage } from "gatsby-plugin-image";
 import { faHotel, faMoon, faSunrise } from "@fortawesome/pro-light-svg-icons";
@@ -17,9 +16,8 @@ import SEO from "../components/seo";
 
 const WeddingPage = () => {
   return (
-    <div>
+    <Layout>
       <SEO title="Wedding" />
-      <Header />
       <div className="bg-gray-100 mt-16 sm:mt-44 py-10">
         <h1 className="text-center text-3xl px-5 sm:text-7xl italic text-navy">
           Our Commitment to Love
@@ -34,7 +32,7 @@ const WeddingPage = () => {
           className="animate__animated animate__fadeIn"
         />
       </div>
-      <Layout>
+      <div className="custom-container">
         <div className="flex flex-col mx-auto sm:flex-row p-5">
           <InfoBlock
             title="Sofitel Phokeethra"
@@ -60,9 +58,9 @@ const WeddingPage = () => {
             target="_blank"
           />
         </div>
-      </Layout>
+      </div>
       <div className="bg-navy">
-        <Layout>
+        <div className="custom-container">
           <div className="flex flex-col sm:flex-row">
             <PartyCard
               title="Groom's Party"
@@ -75,10 +73,10 @@ const WeddingPage = () => {
               animate="slide-left"
             />
           </div>
-        </Layout>
+        </div>
       </div>
       <div className="bg-pattern">
-        <Layout>
+        <div className="custom-container">
           <div className="flex justify-center">
             <ProgramCard
               title="Morning Ceremony"
@@ -94,19 +92,19 @@ const WeddingPage = () => {
               programList={EveningProgram}
             />
           </div>
-        </Layout>
+        </div>
       </div>
       <div className="bg-gray-100">
-        <Layout>
+        <div className="custom-container">
           <div className="flex flex-col py-10 mx-5">
             <h5 className="text-gray-400 text-center">Social Media Tag</h5>
             <h1 className="text-gold text-center text-5xl sm:text-7xl my-5">
               #timandhourng
             </h1>
           </div>
-        </Layout>
+        </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
