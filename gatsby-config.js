@@ -27,7 +27,6 @@ module.exports = {
         icon: `src/images/img-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-scroll-reveal`,
@@ -40,6 +39,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 };

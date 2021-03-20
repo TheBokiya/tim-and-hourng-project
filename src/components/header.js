@@ -194,17 +194,6 @@ const Header = () => {
                       onMouseLeave={() => setDropdownIsOpen(false)}
                     >
                       <ul>
-                        {/* {item.sub?.map((j, index) => {
-                          return (
-                            <li className="py-2 font-sans text-xs uppercase tracking-widest">
-                              <AnchorLink
-                                to={j.anchor}
-                                title={j.page}
-                                className="font-sans no-underline text-xs text-navy"
-                              />
-                            </li>
-                          );
-                        })} */}
                         {VisitingSegements.map((item, index) => {
                           return (
                             <li className="py-2 font-sans text-xs uppercase tracking-widest">
