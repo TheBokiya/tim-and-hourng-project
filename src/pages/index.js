@@ -10,7 +10,7 @@ import SEO from "../components/seo";
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Tim & Hourng" />
+      <SEO title="Home" />
       <div className="animate__animated animate__fadeIn">
         <div className="static h-full overflow-y-hidden">
           <StaticImage
