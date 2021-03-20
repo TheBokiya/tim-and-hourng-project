@@ -47,7 +47,7 @@ const AttractionSegement = () => {
           target="_blank"
         />
       </div>
-
+      <hr />
       <p>
         Of course, there are plenty more things to see and do in Phnom Penh. If
         you have more time and would to explore other parts of Cambodia, Siem

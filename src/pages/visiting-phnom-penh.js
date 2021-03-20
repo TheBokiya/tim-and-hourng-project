@@ -10,6 +10,55 @@ import RestaurantsAndCafesSegement from "./visiting-phnom-penh/restaurants-and-c
 import SalonOptions from "./visiting-phnom-penh/salon-options";
 import AttractionSegement from "./visiting-phnom-penh/attractions";
 import SEO from "../components/seo";
+import MobilePhoneSegment from "./visiting-phnom-penh/mobile-phone-services";
+
+export const VisitingSegements = [
+  {
+    title: "Getting Here",
+    id: "getting-here",
+    component: GettingHereSegment,
+  },
+  {
+    title: "Currencies",
+    id: "currencies",
+    component: CurrenciesSegment,
+  },
+  {
+    title: "Mobile Services",
+    id: "mobile-services",
+    component: MobilePhoneSegment,
+  },
+  {
+    title: "Accomodations",
+    id: "accomodations",
+    component: AccomodationsSegment,
+  },
+  {
+    title: "Transportations",
+    id: "transportations",
+    component: TransportationsSegment,
+  },
+  {
+    title: "Food",
+    id: "food",
+    component: FoodSegment,
+  },
+  {
+    title: "Restaurants & Cafés",
+    id: "restaurants-and-cafes",
+    component: RestaurantsAndCafesSegement,
+  },
+  {
+    title: "Salon Options",
+    id: "salon-options",
+    component: SalonOptions,
+  },
+  {
+    title: "Attractions",
+    id: "attractions",
+    component: AttractionSegement,
+  },
+];
 
 const VisingPhnomPenhPage = () => {
   return (
@@ -61,54 +110,14 @@ const VisingPhnomPenhPage = () => {
             explore other parts of Cambodia.
           </p>
         </div>
-        <div className="py-3">
-          <h2 className="text-gold text-4xl" id="getting-here">
-            1. Getting Here
-          </h2>
-          <GettingHereSegment />
-        </div>
-        <div className="py-3">
-          <h2 className="text-gold text-4xl" id="currencies">
-            2. Currencies
-          </h2>
-          <CurrenciesSegment />
-        </div>
-        <div className="py-3">
-          <h2 className="text-gold text-4xl" id="accomodations">
-            3. Accomodations
-          </h2>
-          <AccomodationsSegment />
-        </div>
-        <div className="py-3">
-          <h2 className="text-gold text-4xl" id="transportations">
-            4. Transportations
-          </h2>
-          <TransportationsSegment />
-        </div>
-        <div className="py-3">
-          <h2 className="text-gold text-4xl" id="food">
-            5. Food
-          </h2>
-          <FoodSegment />
-        </div>
-        <div className="py-3">
-          <h2 className="text-gold text-4xl" id="restaurants-and-cafes">
-            6. Restaurants &amp; Cafés
-          </h2>
-          <RestaurantsAndCafesSegement />
-        </div>
-        <div className="py-3">
-          <h2 className="text-gold text-4xl" id="salon-options">
-            7. Salon Options
-          </h2>
-          <SalonOptions />
-        </div>
-        <div className="py-3">
-          <h2 className="text-gold text-4xl" id="attractions">
-            8. Attractions
-          </h2>
-          <AttractionSegement />
-        </div>
+        {VisitingSegements.map((item, index) => {
+          return (
+            <div className="py-5" key={index} id={item.id}>
+              <h2 className="text-gold text-4xl">{item.title}</h2>
+              <item.component />
+            </div>
+          );
+        })}
       </div>
     </Layout>
   );

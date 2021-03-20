@@ -6,9 +6,10 @@ import {
   faTimes,
   faChevronDown,
 } from "@fortawesome/pro-light-svg-icons";
-import { MenuItems } from "../components/constants";
+import { MenuItems, visingPhnomPenhLink } from "../components/constants";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image";
+import { VisitingSegements } from "../pages/visiting-phnom-penh";
 
 const Header = () => {
   const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
@@ -193,12 +194,12 @@ const Header = () => {
                       onMouseLeave={() => setDropdownIsOpen(false)}
                     >
                       <ul>
-                        {item.sub?.map((j, index) => {
+                        {VisitingSegements.map((item, index) => {
                           return (
                             <li className="py-2 font-sans text-xs uppercase tracking-widest">
                               <AnchorLink
-                                to={j.anchor}
-                                title={j.page}
+                                to={visingPhnomPenhLink + "#" + item.id}
+                                title={item.title}
                                 className="font-sans no-underline text-xs text-navy"
                               />
                             </li>
