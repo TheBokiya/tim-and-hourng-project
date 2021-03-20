@@ -1,4 +1,6 @@
-const visingPhnomPenhLink = "/visiting-phnom-penh";
+import { VisitingSegements } from "../pages/visiting-phnom-penh";
+
+export const visingPhnomPenhLink = "/visiting-phnom-penh";
 
 export const GroomSide = [
   {
@@ -202,40 +204,7 @@ export const MenuItems = [
   {
     page: "Visiting Phnom Penh",
     link: visingPhnomPenhLink,
-    sub: [
-      {
-        page: "Getting Here",
-        anchor: visingPhnomPenhLink + "#getting-here",
-      },
-      {
-        page: "Currencies",
-        anchor: visingPhnomPenhLink + "#currencies",
-      },
-      {
-        page: "Accomodations",
-        anchor: visingPhnomPenhLink + "#accomodations",
-      },
-      {
-        page: "Transportations",
-        anchor: visingPhnomPenhLink + "#transportations",
-      },
-      {
-        page: "Food",
-        anchor: visingPhnomPenhLink + "#food",
-      },
-      {
-        page: "Restaurants & Cafés",
-        anchor: visingPhnomPenhLink + "#restaurants-and-cafes",
-      },
-      {
-        page: "Salon Options",
-        anchor: visingPhnomPenhLink + "#salon-options",
-      },
-      {
-        page: "Attractions",
-        anchor: visingPhnomPenhLink + "#attractions",
-      },
-    ],
+    sub: VisitingSegements,
   },
   {
     page: "Our Story",
