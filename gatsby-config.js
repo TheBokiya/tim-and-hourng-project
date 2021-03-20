@@ -19,11 +19,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        name: `Tim & Hourng`,
+        short_name: `T&H`,
+        description: `Our Commitment to Love`,
         start_url: `/`,
         lang: `en`,
         icon: `src/images/img-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-scroll-reveal`,
