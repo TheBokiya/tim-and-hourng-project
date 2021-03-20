@@ -18,7 +18,7 @@ const WeddingPage = () => {
   return (
     <Layout>
       <SEO title="Wedding" />
-      <div className="bg-gray-100 mt-16 sm:mt-44 py-10">
+      <div className="bg-gray-100 py-10">
         <h1 className="text-center text-3xl px-5 sm:text-7xl italic text-navy">
           Our Commitment to Love
         </h1>
@@ -33,7 +33,7 @@ const WeddingPage = () => {
         />
       </div>
       <div className="custom-container">
-        <div className="flex flex-col mx-auto sm:flex-row p-5">
+        <div className="flex flex-col mx-auto sm:flex-row py-5">
           <InfoBlock
             title="Sofitel Phokeethra"
             time="Phnom Penh"
@@ -84,7 +84,7 @@ const WeddingPage = () => {
               programList={MorningProgram}
             />
           </div>
-          <hr className="mx-5" />
+          <hr />
           <div className="flex justify-center">
             <ProgramCard
               title="Evening Reception"
@@ -96,7 +96,7 @@ const WeddingPage = () => {
       </div>
       <div className="bg-gray-100">
         <div className="custom-container">
-          <div className="flex flex-col py-10 mx-5">
+          <div className="flex flex-col py-10">
             <h5 className="text-gray-400 text-center">Social Media Tag</h5>
             <h1 className="text-gold text-center text-5xl sm:text-7xl my-5">
               #timandhourng

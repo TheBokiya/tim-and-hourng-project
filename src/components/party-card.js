@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const PartyCard = (props) => {
   return (
     <div
-      className="flex flex-col my-16 mx-5 p-5 sm:w-1/2 border-gold border-2"
+      className="flex flex-col my-16 p-5 sm:w-1/2 border-gold border-2"
       data-sal={props.animate}
       data-sal-duration="500"
     >

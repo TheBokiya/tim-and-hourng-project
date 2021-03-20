@@ -7,9 +7,9 @@ import Header from "../components/header";
 const Layout = ({ children }) => {
   return (
     <div className="flex flex-col justify-between">
-      <Header />
       <SEO image={CoverImage} />
-      {children}
+      <Header />
+      <div className="mt-16 sm:mt-56">{children}</div>
     </div>
   );
 };

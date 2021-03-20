@@ -11,7 +11,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Tim & Hourng" />
-      <div className="mt-16 animate__animated animate__fadeIn">
+      <div className="animate__animated animate__fadeIn">
         <div className="static h-full overflow-y-hidden">
           <StaticImage
             src="../images/img-cover.png"

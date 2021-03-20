@@ -30,7 +30,7 @@ const OurStoryPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Our Story" />
-      <div className="bg-navy px-5 mt-16 sm:mt-44">
+      <div className="bg-navy">
         <div className="custom-container">
           <div className="bg-white p-4 sm:p-10">
             <h1 className="font-sans uppercase text-4xl">Our Beginning</h1>
@@ -78,7 +78,7 @@ const OurStoryPage = ({ data }) => {
             />
           </div>
           <div
-            className="bg-white z-10 p-5 lg:p-10 lg:-ml-20 self-center"
+            className="bg-white z-10 p-5 lg:p-8 lg:-ml-20 self-center"
             data-sal="slide-right"
             data-sal-duration="500"
           >
@@ -95,7 +95,7 @@ const OurStoryPage = ({ data }) => {
         </div>
         <div className="mt-32 flex flex-col-reverse lg:grid lg:grid-cols-3">
           <div
-            className="bg-white z-10 p-5 lg:p-10 lg:-mr-20 self-center"
+            className="bg-white z-10 p-5 lg:p-8 lg:-mr-20 self-center"
             data-sal="slide-right"
             data-sal-duration="500"
           >

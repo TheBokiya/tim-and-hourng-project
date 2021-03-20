@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const ProgramCard = (props) => {
   return (
     <div
-      className="justify-center sm:flex-shrink w-full sm:w-2/3 bg-white mx-5 py-10 px-5 my-16 border-gold border-2"
+      className="justify-center sm:flex-shrink w-full sm:w-2/3 bg-white py-10 px-5 my-16 border-gold border-2"
       data-sal="slide-up"
       data-sal-duration="500"
     >

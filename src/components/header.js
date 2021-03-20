@@ -8,9 +8,7 @@ import {
 } from "@fortawesome/pro-light-svg-icons";
 import { MenuItems } from "../components/constants";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-
-const groom = "Tim";
-const bride = "Hourng";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Header = () => {
   const [dropdownIsOpen, setDropdownIsOpen] = useState(false);
@@ -48,13 +46,14 @@ const Header = () => {
       <div className="sm:hidden">
         <div className="flex justify-between">
           <Link to="/" className="no-underline">
-            <h3 className="flex justify-center text-gray-700 uppercase">
-              {groom}
-              <span className="text-gold text-xs mx-2 self-center title">
-                &amp;
-              </span>
-              {bride}
-            </h3>
+            <div className="flex justify-center">
+              <StaticImage
+                src="../images/img-logo.png"
+                alt="logo"
+                placeholder="blurred"
+                height={30}
+              />
+            </div>
           </Link>
           <button
             type="button"
@@ -143,15 +142,16 @@ const Header = () => {
       {/* Desktop Menu */}
       <div className="hidden sm:block">
         {!menuIsSmall && (
-          <div className="pb-10">
+          <div className="pb-5">
             <Link to="/" className="no-underline">
-              <h1 className="flex justify-center text-gray-700 text-5xl uppercase">
-                {groom}
-                <span className="text-gold text-lg mx-2 self-center title">
-                  &amp;
-                </span>
-                {bride}
-              </h1>
+              <div className="flex justify-center">
+                <StaticImage
+                  src="../images/img-logo.png"
+                  placeholder="blurred"
+                  alt="logo"
+                  height={100}
+                />
+              </div>
             </Link>
 
             <h5 className="flex justify-center text-xs py-3 tracking-widest font-sans uppercase text-gray-300">
