@@ -106,15 +106,15 @@ const Header = () => {
                     className={(dropdownIsOpen ? "block" : "hidden") + " ml-10"}
                   >
                     <ul>
-                      {item.sub?.map((j, index) => {
+                      {VisitingSegements.map((item, index) => {
                         return (
                           <li
                             className="py-2 font-sans text-xs uppercase tracking-widest"
                             key={index}
                           >
                             <AnchorLink
-                              to={j.anchor}
-                              title={j.page}
+                              to={visingPhnomPenhLink + "#" + item.id}
+                              title={item.title}
                               className="font-sans no-underline text-xs text-navy"
                             />
                           </li>
