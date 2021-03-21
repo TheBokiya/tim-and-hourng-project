@@ -84,7 +84,7 @@ const Header = () => {
       >
         {MenuItems.map((item, index) => {
           return (
-            <div className="py-2">
+            <div className="py-2" key={index}>
               {item.sub ? (
                 <div className="py-2">
                   <Link
@@ -163,7 +163,7 @@ const Header = () => {
         <div className="flex justify-center">
           {MenuItems.map((item, index) => {
             return (
-              <div>
+              <div key={index}>
                 {item.sub ? (
                   <div className="relative">
                     <Link
@@ -196,7 +196,10 @@ const Header = () => {
                       <ul>
                         {VisitingSegements.map((item, index) => {
                           return (
-                            <li className="py-2 font-sans text-xs uppercase tracking-widest">
+                            <li
+                              className="py-2 font-sans text-xs uppercase tracking-widest"
+                              key={index}
+                            >
                               <AnchorLink
                                 to={visingPhnomPenhLink + "#" + item.id}
                                 title={item.title}
