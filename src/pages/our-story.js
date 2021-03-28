@@ -99,16 +99,20 @@ const OurStoryPage = ({ data }) => {
             data-sal="slide-right"
             data-sal-duration="500"
           >
-            <h2 className="font-sans uppercase text-gold lg:text-right">
-              Muy Hourng
-            </h2>
-            <p className="lg:text-right">
-              Waking up everyday, I still cannot belive that we are together. A
-              kind, funny and smart girl, MuyHourng never fails to make me
-              laugh. She picks me back up when I fall down. She supports and
-              challenges me whenever I need an extra push. I cannot wait to
-              spend the rest of my life with you.
+            <h2 className="font-sans uppercase text-gold">Hourng</h2>
+            <p>
+              It all started with an unexpected friend request from a familiar
+              face. You came into my life when I wasn’t looking for love. Thank
+              you for picking up the pieces and making everything right again.
+              Receiving a Good Morning text every morning reminds me how blessed
+              i am to be loved and cared by this man.
             </p>
+            <p>
+              I know you will remain as gentle, loving and caring as you are now
+              and always stay by my side no matter the circumstances. I love you
+              to the moon and back.
+            </p>
+            <p>From your clumsy girlfriend.</p>
           </div>
           <div className="lg:col-span-2">
             <StaticImage
