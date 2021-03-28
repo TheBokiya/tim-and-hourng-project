@@ -105,7 +105,7 @@ const OurStoryPage = ({ data }) => {
               face. You came into my life when I wasn’t looking for love. Thank
               you for picking up the pieces and making everything right again.
               Receiving a Good Morning text every morning reminds me how blessed
-              i am to be loved and cared by this man.
+              I am to be loved and cared by this man.
             </p>
             <p>
               I know you will remain as gentle, loving and caring as you are now
@@ -123,7 +123,7 @@ const OurStoryPage = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-100 mt-16">
+      {/* <div className="bg-gray-100 mt-16">
         <h1 className="font-sans text-6xl text-navy uppercase py-16 mx-5 md:px-16 lg:px-28 xl:px-44">
           Our <br /> memories
         </h1>
@@ -140,7 +140,7 @@ const OurStoryPage = ({ data }) => {
             );
           })}
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };
