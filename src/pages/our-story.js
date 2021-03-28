@@ -17,7 +17,7 @@ export const imgQuery = graphql`
         node {
           relativePath
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, width: 300, height: 300)
+            gatsbyImageData(width: 300, height: 300)
           }
           name
         }
@@ -135,7 +135,7 @@ const OurStoryPage = ({ data }) => {
                 key={index}
                 image={image}
                 alt={item.node.name}
-                className="flex-grow w-1/4 sm:w-1/6 m-0.5"
+                className="flex-grow w-1/4 sm:w-1/6"
               />
             );
           })}
