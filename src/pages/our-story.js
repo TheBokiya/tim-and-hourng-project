@@ -135,7 +135,7 @@ const OurStoryPage = ({ data }) => {
                 key={index}
                 image={image}
                 alt={item.node.name}
-                className="flex-grow w-1/4 h-1/4 sm:w-1/6 sm:h-1/6 opacity-75"
+                className="flex-grow w-1/4 sm:w-1/6 m-0.5"
               />
             );
           })}
