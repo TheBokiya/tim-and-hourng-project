@@ -34,17 +34,19 @@ const OurStoryPage = ({ data }) => {
         <div className="custom-container">
           <div className="bg-white p-4 sm:p-10">
             <h1 className="font-sans uppercase text-4xl">Our Beginning</h1>
-            <p className="pt-10">
+            <div className="pt-10">
+              <StaticImage
+                src="../images/our-story/img-beach.png"
+                placeholder="blurred"
+                alt="lantern"
+                className="animate__animated animate__fadeIn"
+              />
+            </div>
+            <p>
               If you ask any of us, when did we first see each other? We would
               not be able to answer that. Truth is, we have known each other
               since high school, though we do not know when.
             </p>
-            <StaticImage
-              src="../images/our-story/img-lantern.png"
-              placeholder="blurred"
-              alt="lantern"
-              className="animate__animated animate__fadeIn"
-            />
             <p>
               After years of no communication, it all started with a simple
               friend request on Facebook. The way we connected, it all felt
