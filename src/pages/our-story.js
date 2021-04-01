@@ -125,24 +125,6 @@ const OurStoryPage = ({ data }) => {
           </div>
         </div>
       </div>
-      {/* <div className="bg-gray-100 mt-16">
-        <h1 className="font-sans text-6xl text-navy uppercase py-16 mx-5 md:px-16 lg:px-28 xl:px-44">
-          Our <br /> memories
-        </h1>
-        <div className="flex flex-wrap">
-          {data.allFile.edges.map((item, index) => {
-            const image = getImage(item.node);
-            return (
-              <GatsbyImage
-                key={index}
-                image={image}
-                alt={item.node.name}
-                className="flex-grow w-1/4 sm:w-1/6"
-              />
-            );
-          })}
-        </div>
-      </div> */}
     </Layout>
   );
 };
