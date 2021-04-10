@@ -61,7 +61,7 @@ const WeddingPage = () => {
       </div>
       <div className="bg-navy">
         <div className="custom-container">
-          <div className="flex flex-col sm:flex-row">
+          <div className="flex flex-col sm:flex-row justify-center">
             <PartyCard
               title="Groom's Party"
               members={GroomSide}
