@@ -35,7 +35,7 @@ const IndexPage = () => {
               Le mariage de Tim et Hourng
             </h1>
             <h3 className="text-primary text-center flex justify-center uppercase tracking-wide text-gray-400 text-base pb-5">
-              Notre engagement à aimer
+              La vie en rose
             </h3>
             <div className="flex justify-center">
               <FontAwesomeIcon

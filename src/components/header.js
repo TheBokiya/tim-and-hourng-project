@@ -78,7 +78,7 @@ const Header = () => {
       {/* Hamburger menu */}
       <div
         className={
-          (hamburgerIsOpen ? "block" : "hidden") + " pt-5 sm:flex relative"
+          (hamburgerIsOpen ? "block" : "hidden") + " pt-5 sm:hidden relative"
         }
       >
         {MenuItems.map((item, index) => {
