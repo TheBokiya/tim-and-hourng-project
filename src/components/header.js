@@ -44,35 +44,33 @@ const Header = () => {
       }`}
     >
       {/* Mobile Menu */}
-      <div className="sm:hidden">
-        <div className="flex justify-between">
-          <Link to="/" className="no-underline">
-            <div className="flex justify-center">
-              <StaticImage
-                src="../images/img-logo.png"
-                alt="logo"
-                placeholder="blurred"
-                height={30}
-              />
-            </div>
-          </Link>
-          <button
-            type="button"
-            className="focus:outline-none"
-            onClick={() => {
-              setHamburgerIsOpen(!hamburgerIsOpen);
-            }}
-          >
-            <FontAwesomeIcon
-              icon={faBars}
-              className={(!hamburgerIsOpen ? "block" : "hidden") + " text-navy"}
+      <div className="sm:hidden flex justify-between">
+        <Link to="/" className="no-underline">
+          <div className="flex justify-center">
+            <StaticImage
+              src="../images/img-logo-mob.png"
+              alt="logo"
+              placeholder="blurred"
+              width={150}
             />
-            <FontAwesomeIcon
-              icon={faTimes}
-              className={(hamburgerIsOpen ? "block" : "hidden") + " text-navy"}
-            />
-          </button>
-        </div>
+          </div>
+        </Link>
+        <button
+          type="button"
+          className="focus:outline-none"
+          onClick={() => {
+            setHamburgerIsOpen(!hamburgerIsOpen);
+          }}
+        >
+          <FontAwesomeIcon
+            icon={faBars}
+            className={(!hamburgerIsOpen ? "block" : "hidden") + " text-navy"}
+          />
+          <FontAwesomeIcon
+            icon={faTimes}
+            className={(hamburgerIsOpen ? "block" : "hidden") + " text-navy"}
+          />
+        </button>
       </div>
 
       {/* Hamburger menu */}
@@ -145,12 +143,12 @@ const Header = () => {
         {!menuIsSmall && (
           <div className="pb-5">
             <Link to="/" className="no-underline">
-              <div className="flex justify-center">
+              <div className="flex justify-center py-5">
                 <StaticImage
                   src="../images/img-logo.png"
                   placeholder="blurred"
                   alt="logo"
-                  height={100}
+                  width={600}
                 />
               </div>
             </Link>
