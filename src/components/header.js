@@ -44,18 +44,18 @@ const Header = () => {
       }`}
     >
       {/* Mobile Menu */}
-      <div className="sm:hidden">
-        <div className="flex justify-between">
+      <div className="sm:hidden flex justify-between items-center py-3">
+        <div>
           <Link to="/" className="no-underline">
-            <div className="flex justify-center">
-              <StaticImage
-                src="../images/img-logo.png"
-                alt="logo"
-                placeholder="blurred"
-                height={30}
-              />
-            </div>
+            <StaticImage
+              src="../images/img-logo.png"
+              alt="logo"
+              placeholder="blurred"
+              width={200}
+            />
           </Link>
+        </div>
+        <div>
           <button
             type="button"
             className="focus:outline-none"
@@ -78,8 +78,7 @@ const Header = () => {
       {/* Hamburger menu */}
       <div
         className={
-          (hamburgerIsOpen ? "block" : "hidden") +
-          " pt-5 sm:flex sm:hidden relative"
+          (hamburgerIsOpen ? "block" : "hidden") + " pt-5 sm:flex relative"
         }
       >
         {MenuItems.map((item, index) => {
@@ -145,12 +144,12 @@ const Header = () => {
         {!menuIsSmall && (
           <div className="pb-5">
             <Link to="/" className="no-underline">
-              <div className="flex justify-center">
+              <div className="flex justify-center py-5">
                 <StaticImage
                   src="../images/img-logo.png"
                   placeholder="blurred"
                   alt="logo"
-                  height={100}
+                  width={600}
                 />
               </div>
             </Link>
