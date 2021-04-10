@@ -70,30 +70,22 @@ export const EveningProgram = [
   },
   {
     time: "18:45 - 19:00",
-    program: "Speech from Parents and the couple",
+    program: "Speech from Parents and the couple / Exchange of vows",
   },
   {
-    time: "19:00 - 19:05",
-    program: "Exchange of Vows",
-  },
-  {
-    time: "19:05 - 19:10",
-    program: "First Dance",
+    time: "19:00 - 19:10",
+    program: "Champagne Toast & Cake Cutting",
   },
   {
     time: "19:10 - 19:15",
-    program: "Champagne Toast",
+    program: "First Dance",
   },
   {
     time: "19:15 - 20:15",
     program: "Dinner",
   },
   {
-    time: "20:15 - 20:30",
-    program: "Cake Cutting",
-  },
-  {
-    time: "20:30 - Late",
+    time: "20:15 - Late",
     program: "Dancing",
   },
 ];
