@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
     <div className="flex flex-col justify-between">
       <SEO image={coverImage} title="Tim & Hourng" />
       <Header />
-      <div className="mt-16 sm:mt-56">{children}</div>
+      <div className="mt-20 sm:mt-56">{children}</div>
     </div>
   );
 };

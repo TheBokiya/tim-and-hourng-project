@@ -44,40 +44,41 @@ const Header = () => {
       }`}
     >
       {/* Mobile Menu */}
-      <div className="sm:hidden flex justify-between">
-        <Link to="/" className="no-underline">
-          <div className="flex justify-center">
+      <div className="sm:hidden flex justify-between items-center py-3">
+        <div>
+          <Link to="/" className="no-underline">
             <StaticImage
-              src="../images/img-logo-mob.png"
+              src="../images/img-logo.png"
               alt="logo"
               placeholder="blurred"
-              width={150}
+              width={200}
             />
-          </div>
-        </Link>
-        <button
-          type="button"
-          className="focus:outline-none"
-          onClick={() => {
-            setHamburgerIsOpen(!hamburgerIsOpen);
-          }}
-        >
-          <FontAwesomeIcon
-            icon={faBars}
-            className={(!hamburgerIsOpen ? "block" : "hidden") + " text-navy"}
-          />
-          <FontAwesomeIcon
-            icon={faTimes}
-            className={(hamburgerIsOpen ? "block" : "hidden") + " text-navy"}
-          />
-        </button>
+          </Link>
+        </div>
+        <div>
+          <button
+            type="button"
+            className="focus:outline-none"
+            onClick={() => {
+              setHamburgerIsOpen(!hamburgerIsOpen);
+            }}
+          >
+            <FontAwesomeIcon
+              icon={faBars}
+              className={(!hamburgerIsOpen ? "block" : "hidden") + " text-navy"}
+            />
+            <FontAwesomeIcon
+              icon={faTimes}
+              className={(hamburgerIsOpen ? "block" : "hidden") + " text-navy"}
+            />
+          </button>
+        </div>
       </div>
 
       {/* Hamburger menu */}
       <div
         className={
-          (hamburgerIsOpen ? "block" : "hidden") +
-          " pt-5 sm:flex sm:hidden relative"
+          (hamburgerIsOpen ? "block" : "hidden") + " pt-5 sm:flex relative"
         }
       >
         {MenuItems.map((item, index) => {
