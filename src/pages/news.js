@@ -12,6 +12,11 @@ export const newsQuery = graphql`
               date
               slug
               title
+              # featuredImage {
+              #   childImageSharp {
+              #     gatsbyImageData
+              #   }
+              # }
             }
           }
         }
