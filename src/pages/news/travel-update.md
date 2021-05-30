@@ -1,6 +1,6 @@
 ---
 slug: "/news/travel-update"
-featuredImage: travel-update.png
+featuredImage: ../../images/news/featured-travel-update.png
 date: "2021-05-29"
 title: "Travel Update"
 ---

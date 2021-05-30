@@ -1,14 +1,14 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-// import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
-  // const featuredImgFluid = getImage(frontmatter.featuredImage);
+  const featuredImgFluid = getImage(frontmatter.featuredImage);
 
   return (
     <Layout>
@@ -22,7 +22,7 @@ export default function Template({
               {frontmatter.date}
             </h3>
           </div>
-          {/* <GatsbyImage image={featuredImgFluid} alt={frontmatter.title} /> */}
+          <GatsbyImage image={featuredImgFluid} alt={frontmatter.title} />
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -41,11 +41,11 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
-        # featuredImage {
-        #   childImageSharp {
-        #     gatsbyImageData
-        #   }
-        # }
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
     }
   }
