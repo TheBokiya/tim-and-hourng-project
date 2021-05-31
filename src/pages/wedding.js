@@ -2,7 +2,12 @@ import React from "react";
 import Layout from "../components/layout";
 import Button from "../components/button";
 import { StaticImage } from "gatsby-plugin-image";
-import { faHotel, faMoon, faSunrise } from "@fortawesome/pro-light-svg-icons";
+import {
+  faCalendar,
+  faHotel,
+  faMoon,
+  faSunrise,
+} from "@fortawesome/pro-light-svg-icons";
 import {
   BrideSide,
   GroomSide,
@@ -38,6 +43,11 @@ const WeddingPage = () => {
             title="Sofitel Phokeethra"
             time="Phnom Penh"
             icon={faHotel}
+          />
+          <InfoBlock
+            title="Save The Date"
+            time="December 26, 2021"
+            icon={faCalendar}
           />
           <InfoBlock
             title="Morning Ceremony"
