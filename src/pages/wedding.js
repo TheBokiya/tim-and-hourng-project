@@ -8,12 +8,7 @@ import {
   faMoon,
   faSunrise,
 } from "@fortawesome/pro-light-svg-icons";
-import {
-  BrideSide,
-  GroomSide,
-  MorningProgram,
-  EveningProgram,
-} from "../components/constants";
+import { BrideSide, GroomSide, MorningProgram } from "../components/constants";
 import PartyCard from "../components/party-card";
 import ProgramCard from "../components/program-card";
 import InfoBlock from "../components/info-block";
@@ -38,6 +33,21 @@ const WeddingPage = () => {
         />
       </div>
       <div className="custom-container">
+        <div className="my-12">
+          <p>
+            Due to the current Covid situation in Cambodia, we have decided to
+            postpone the evening reception to a later date next year. We will
+            have a small family-only ceremony in the morning on December 26th,
+            2021.
+          </p>
+          <p>
+            We hope that by postponing the evening reception to next year, many
+            of our friends abroad can join the wedding without having to go
+            through mandatory quarantine. We sincerely apologize for not being
+            able to invite our close friends to the morning ceremony due to
+            restrictions.
+          </p>
+        </div>
         <div className="flex flex-col mx-auto sm:flex-row py-5">
           <InfoBlock
             title="Sofitel Phokeethra"
@@ -53,11 +63,6 @@ const WeddingPage = () => {
             title="Morning Ceremony"
             time="06:00 - 12:00"
             icon={faSunrise}
-          />
-          <InfoBlock
-            title="Evening Reception"
-            time="17:30 - 22:00"
-            icon={faMoon}
           />
         </div>
         <div className="flex justify-center my-10">
@@ -92,14 +97,6 @@ const WeddingPage = () => {
               title="Morning Ceremony"
               subtitle="For Families and Close Friends"
               programList={MorningProgram}
-            />
-          </div>
-          <hr />
-          <div className="flex justify-center">
-            <ProgramCard
-              title="Evening Reception"
-              subtitle="all guests"
-              programList={EveningProgram}
             />
           </div>
         </div>
