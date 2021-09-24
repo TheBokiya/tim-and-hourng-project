@@ -11,10 +11,6 @@ export const GroomSide = [
     title: "Groom",
     members: ["Heng Tim Bodyka"],
   },
-  {
-    title: "Groomsmen",
-    members: ["Groomsman #1", "Groomsman #2", "Groomsman #3"],
-  },
 ];
 
 export const BrideSide = [
@@ -25,10 +21,6 @@ export const BrideSide = [
   {
     title: "Bride",
     members: ["Leng Muy Hourng"],
-  },
-  {
-    title: "Bridesmaids",
-    members: ["Bridesmaid #1", "Bridesmaid #2", "Bridesmaid #3"],
   },
 ];
 
