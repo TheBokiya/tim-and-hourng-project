@@ -5,7 +5,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import {
   faCalendar,
   faHotel,
-  faMoon,
   faSunrise,
 } from "@fortawesome/pro-light-svg-icons";
 import { BrideSide, GroomSide, MorningProgram } from "../components/constants";
@@ -50,8 +49,8 @@ const WeddingPage = () => {
         </div>
         <div className="flex flex-col mx-auto sm:flex-row py-5">
           <InfoBlock
-            title="Sofitel Phokeethra"
-            time="Phnom Penh"
+            title="Phokeethra Sky (12th Floor)"
+            time="Sofitel Phnom Penh Phokeethra"
             icon={faHotel}
           />
           <InfoBlock
@@ -61,7 +60,7 @@ const WeddingPage = () => {
           />
           <InfoBlock
             title="Morning Ceremony"
-            time="06:00 - 12:00"
+            time="06:30 - 12:00"
             icon={faSunrise}
           />
         </div>

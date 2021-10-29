@@ -11,6 +11,10 @@ export const GroomSide = [
     title: "Groom",
     members: ["Heng Tim Bodyka"],
   },
+  {
+    title: "Groomsmen",
+    members: ["#Groomsman1", "#Groomsman2"],
+  },
 ];
 
 export const BrideSide = [
@@ -22,32 +26,36 @@ export const BrideSide = [
     title: "Bride",
     members: ["Leng Muy Hourng"],
   },
+  {
+    title: "Bridesmaid",
+    members: ["#Bridesmaid1", "#Bridesmaid2"],
+  },
 ];
 
 export const MorningProgram = [
   {
-    time: "07:00 - 07:30",
+    time: "06:30 AM",
+    program: "Prepare for Dowry Ceremony",
+  },
+  {
+    time: "07:00 AM",
     program: "Dowry Ceremony",
   },
   {
-    time: "07:30 - 08:30",
-    program: "Monk Blessing",
+    time: "07:30 AM",
+    program: "Breakfast",
   },
   {
-    time: "08:30 - 09:00",
-    program: "Honoring the Parents",
+    time: "08:45 AM",
+    program: "Hait-Cutting Ceremony",
   },
   {
-    time: "09:00 - 09:30",
-    program: "Honoring the Ancestors",
+    time: "09:45 AM",
+    program: "Other Traditional Ceremonies",
   },
   {
-    time: "09:30 - 10:00",
-    program: "The Passing of Blessings",
-  },
-  {
-    time: "10:30 - 11:00",
-    program: "Knot-Tying Ceremony",
+    time: "12:00 PM",
+    program: "Lunch",
   },
 ];
 
