@@ -86,12 +86,12 @@ const OurStoryPage = ({ data }) => {
             <h2 className="font-sans uppercase text-gold">Tim</h2>
             <p>
               Waking up everyday, I still cannot belive that we are together. A
-              kind, funny and smart girl, MuyHourng never fails to make me
-              laugh. She picks me back up when I fall down. She supports and
-              challenges me whenever I need an extra push. I cannot wait to
-              spend the rest of my life with you.
+              kind, funny and smart girl, you never fail to make me laugh. You
+              pick me back up when I fall down. You support and positively
+              challenge me whenever I need an extra push. I cannot wait to spend
+              the rest of my life with you.
             </p>
-            <p>Je t'aime, Muy Hourng.</p>
+            <p>Je t'aime, MuyHourng.</p>
           </div>
         </div>
         <div className="mt-32 flex flex-col-reverse lg:grid lg:grid-cols-3">
