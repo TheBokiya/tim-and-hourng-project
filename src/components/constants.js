@@ -13,7 +13,7 @@ export const GroomSide = [
   },
   {
     title: "Groomsmen",
-    members: ["#Groomsman1", "#Groomsman2"],
+    members: ["Mey Bonin", "Mey Bonid"],
   },
 ];
 
@@ -34,6 +34,10 @@ export const BrideSide = [
 
 export const MorningProgram = [
   {
+    time: "05:30 AM",
+    program: "Sompeah Pe-Leah Ceremony",
+  },
+  {
     time: "06:30 AM",
     program: "Prepare for Dowry Ceremony",
   },
@@ -47,7 +51,7 @@ export const MorningProgram = [
   },
   {
     time: "08:45 AM",
-    program: "Hait-Cutting Ceremony",
+    program: "Hair-Cutting Ceremony",
   },
   {
     time: "09:45 AM",
