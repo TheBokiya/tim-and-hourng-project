@@ -49,7 +49,7 @@ const WeddingPage = () => {
         </div>
         <div className="flex flex-col mx-auto sm:flex-row py-5">
           <InfoBlock
-            title="Phokeethra Sky (12th Floor)"
+            title="Phokeethra Ballroom 2"
             time="Sofitel Phnom Penh Phokeethra"
             icon={faHotel}
           />
