@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "@thebokiya",
   "dependencies": {
+    "@browniebroke/gatsby-image-gallery": "^7.0.3",
     "@fontsource/alice": "^4.2.2",
     "@fontsource/cormorant-garamond": "^4.2.1",
     "@fontsource/roboto": "^4.2.2",
