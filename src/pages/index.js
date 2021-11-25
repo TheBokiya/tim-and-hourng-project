@@ -14,7 +14,7 @@ const IndexPage = () => {
       <div className="animate__animated animate__fadeIn">
         <div className="static max-h-screen overflow-y-hidden">
           <StaticImage
-            src="../images/img-cover-new.jpg"
+            src="../images/img-cover-new.JPG"
             alt="index-cover-image"
             placeholder="blurred"
             layout="fullWidth"
