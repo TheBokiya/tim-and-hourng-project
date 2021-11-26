@@ -1,24 +1,38 @@
 import React from "react";
 import scrollTo from "gatsby-plugin-smoothscroll";
-import { StaticImage } from "gatsby-plugin-image";
+// import { StaticImage } from "gatsby-plugin-image";
+import Img from "gatsby-image";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRingsWedding } from "@fortawesome/pro-light-svg-icons";
 import SEO from "../components/seo";
 
-const IndexPage = () => {
+export const coverImgQuery = graphql`
+  query {
+    file(relativePath: { eq: "pre-wedding/pre-wedding-00001.JPG" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
+
+const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
       <div className="animate__animated animate__fadeIn">
         <div className="static max-h-screen overflow-y-hidden">
-          <StaticImage
+          {/* <StaticImage
             src="../images/img-cover.JPG"
             alt="index-cover-image"
             placeholder="blurred"
             layout="fullWidth"
-          />
+          /> */}
+          <Img fluid={data.file.childImageSharp.fluid} />
           <div className="hidden sm:block absolute inset-x-0 bottom-6 sm:bottom-10 text-white">
             <div className="scroll">
               <button onClick={() => scrollTo("#bottom-page")}>

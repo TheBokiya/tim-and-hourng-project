@@ -25,7 +25,6 @@ export const query = graphql`
 
 const PreWeddingPage = ({ data }) => {
   const images = data.allFile.edges.map(({ node }) => node.childImageSharp);
-  console.log(images);
 
   return (
     <Layout>
