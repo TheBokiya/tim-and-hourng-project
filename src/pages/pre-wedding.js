@@ -31,17 +31,17 @@ const PreWeddingPage = ({ data }) => {
     <Layout>
       <SEO title="Pre-Wedding" />
       <div className="animate__animated animate__fadeIn">
-        <div className="static h-screen overflow-y-hidden">
+        <div className="static max-h-screen overflow-y-hidden">
           <StaticImage
-            src="../images/pre-wedding/A7304700-Edit.JPG"
+            src="../images/pre-wedding/pre-wedding-00001.JPG"
             alt="phnom-penh-cover"
             placeholder="blurred"
             layout="fullWidth"
           />
         </div>
       </div>
-      <div className="custom-container my-20">
-        <h1 className="uppercase text-3xl">The one with the gold fish</h1>
+      <div className="custom-container">
+        <h1 className="uppercase text-3xl pt-10">The one with the gold fish</h1>
         <p>
           Inspired by a lot of things that we commonly like, we came up with
           this short with the help of Pepper Media Production. We wanted to make
