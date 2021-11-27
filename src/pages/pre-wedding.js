@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image";
 import Gallery from "@browniebroke/gatsby-image-gallery";
+import ExternalLink from "../components/external-link";
 
 export const query = graphql`
   query {
@@ -43,10 +44,14 @@ const PreWeddingPage = ({ data }) => {
         <h1 className="uppercase text-3xl pt-10">The one with the gold fish</h1>
         <p>
           Inspired by a lot of things that we commonly like, we came up with
-          this short with the help of Pepper Media Production. We wanted to make
-          our pre-wedding short to be unique, something that we could have fun
-          and something that we could come back in 20 years time and laugh about
-          it.
+          this short with the help of{" "}
+          <ExternalLink
+            title="Pepper Media Cambodia"
+            link="https://www.facebook.com/Peppermediakh"
+          />
+          . We wanted to make our pre-wedding short to be unique, something that
+          we could have fun and something that we could come back in 20 years
+          time and laugh about it.
         </p>
         <p>We hope you enjoy this short as much as we enjoyed making it.</p>
         <iframe
