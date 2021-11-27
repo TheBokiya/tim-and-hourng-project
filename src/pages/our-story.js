@@ -1,31 +1,9 @@
 import React from "react";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
-import { graphql } from "gatsby";
 import SEO from "../components/seo";
 
-export const imgQuery = graphql`
-  query imgQuery {
-    allFile(
-      filter: {
-        sourceInstanceName: { eq: "images" }
-        relativeDirectory: { eq: "gallery" }
-      }
-    ) {
-      edges {
-        node {
-          relativePath
-          childImageSharp {
-            gatsbyImageData(width: 300, height: 300)
-          }
-          name
-        }
-      }
-    }
-  }
-`;
-
-const OurStoryPage = ({ data }) => {
+const OurStoryPage = () => {
   return (
     <Layout>
       <SEO title="Our Story" />
@@ -35,9 +13,9 @@ const OurStoryPage = ({ data }) => {
             <h1 className="font-sans uppercase text-4xl">Our Beginning</h1>
             <div className="pt-10">
               <StaticImage
-                src="../images/our-story/img-beach.png"
+                src="../images/pre-wedding/elevator-00001.JPG"
                 placeholder="blurred"
-                alt="lantern"
+                alt="elevator"
                 className="animate__animated animate__fadeIn"
               />
             </div>

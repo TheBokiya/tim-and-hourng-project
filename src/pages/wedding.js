@@ -28,11 +28,10 @@ const WeddingPage = () => {
       </div>
       <div className="h-1/3">
         <StaticImage
-          src="../images/wedding/img-sofitel.jpg"
+          src="../images/pre-wedding/baking-00005.JPG"
           placeholder="blurred"
           alt="sofitel cover image"
-          layout="fullWidth"
-          className="animate__animated animate__fadeIn"
+          className="lg:h-mdImg 2xl:h-xlImg"
         />
       </div>
       <div className="custom-container">

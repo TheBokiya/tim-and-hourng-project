@@ -1,5 +1,4 @@
 import React from "react";
-import scrollTo from "gatsby-plugin-smoothscroll";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
@@ -12,24 +11,12 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <div className="animate__animated animate__fadeIn">
-        <div className="static h-full overflow-y-hidden">
-          <StaticImage
-            src="../images/img-cover.png"
-            alt="index-cover-image"
-            placeholder="blurred"
-            layout="fullWidth"
-          />
-          <div className="hidden sm:block absolute inset-x-0 bottom-6 sm:bottom-10 text-white">
-            <div className="scroll">
-              <button onClick={() => scrollTo("#bottom-page")}>
-                <div className="mouse">
-                  <div className="wheel"></div>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="custom-container">
+        <StaticImage
+          src="../images/pre-wedding/apartment-00012.JPG"
+          alt="index-cover-image"
+          placeholder="blurred"
+        />
+        <div className="custom-container mb-16">
           <div className="py-10">
             <h1 className="text-primary text-center flex justify-center uppercase tracking-wide text-navy">
               Le mariage de Tim et Hourng
@@ -59,7 +46,6 @@ const IndexPage = () => {
             Last but not least, thank you for checking out our wedding site. We
             do sincerely thank you for making the time to attend our wedding.
           </p>
-          <div id="bottom-page"></div>
         </div>
       </div>
     </Layout>

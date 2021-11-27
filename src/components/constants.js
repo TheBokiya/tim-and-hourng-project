@@ -189,10 +189,10 @@ export const MenuItems = [
     page: "Home",
     link: "/",
   },
-  // {
-  //   page: "Pre-Wedding",
-  //   link: "/pre-wedding",
-  // },
+  {
+    page: "Pre-Wedding",
+    link: "/pre-wedding",
+  },
   {
     page: "Wedding",
     link: "/wedding",
