@@ -71,6 +71,7 @@ const VisingPhnomPenhPage = () => {
             alt="phnom-penh-cover"
             placeholder="blurred"
             layout="fullWidth"
+            className="g:h-mdImg 2xl:h-xlImg"
           />
         </div>
       </div>

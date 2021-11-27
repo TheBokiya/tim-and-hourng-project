@@ -32,10 +32,10 @@ const PreWeddingPage = ({ data }) => {
       <div className="animate__animated animate__fadeIn">
         <div className="static max-h-screen overflow-y-hidden">
           <StaticImage
-            src="../images/pre-wedding/pre-wedding-00003.JPG"
+            src="../images/pre-wedding/painting-00003.JPG"
             alt="phnom-penh-cover"
             placeholder="blurred"
-            layout="fullWidth"
+            className="animate__animated animate__fadeIn"
           />
         </div>
       </div>
