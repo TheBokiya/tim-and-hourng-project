@@ -3,7 +3,7 @@ module.exports = {
     title: "Tim & Hourng",
     description: "Our Commitment to Love",
     url: "https://timandhourng.com",
-    image: "/images/img-cover.png",
+    image: "images/pre-wedding/apartment-00012.JPG",
     author: "@thebokiya",
   },
   plugins: [
