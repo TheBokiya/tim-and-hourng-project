@@ -13,7 +13,7 @@ const OurStoryPage = () => {
             <h1 className="font-sans uppercase text-4xl">Our Beginning</h1>
             <div className="pt-10">
               <StaticImage
-                src="../images/pre-wedding/elevator-00001.JPG"
+                src="../images/pre-wedding/painting-00010.JPG"
                 placeholder="blurred"
                 alt="elevator"
                 className="animate__animated animate__fadeIn"

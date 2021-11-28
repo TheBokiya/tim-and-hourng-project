@@ -54,16 +54,15 @@ const PreWeddingPage = ({ data }) => {
           time and laugh about it.
         </p>
         <p>We hope you enjoy this short as much as we enjoyed making it.</p>
-        <iframe
-          width="1024"
-          height="576"
-          src="https://www.youtube.com/embed/ddNVmicw8H4"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          className="w-full my-10"
-        ></iframe>
+        <div className="videoWrapper">
+          <iframe
+            src="https://www.youtube.com/embed/ddNVmicw8H4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
         <hr className="my-10" />
         <Gallery images={images} />
       </div>
