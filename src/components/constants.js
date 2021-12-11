@@ -28,7 +28,7 @@ export const BrideSide = [
   },
   {
     title: "Bridesmaid",
-    members: ["#Bridesmaid1", "#Bridesmaid2"],
+    members: ["Youk Nadane", "Long Sivmey"],
   },
 ];
 
