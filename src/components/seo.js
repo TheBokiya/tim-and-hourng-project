@@ -10,10 +10,7 @@ function SEO({ description, lang, image, meta, keywords, title, pathname }) {
       render={(data) => {
         const metaDescription =
           description || data.site.siteMetadata.description;
-        const metaImage =
-          image && image.src
-            ? `${data.site.siteMetadata.siteUrl}${image.src}`
-            : null;
+        const metaImage = image && image.src ? `${data.imageSharp}` : null;
         const metaUrl = `${data.site.siteMetadata.siteUrl}${pathname}`;
         return (
           <Helmet
@@ -128,6 +125,9 @@ export default SEO;
 
 const detailsQuery = graphql`
   query DefaultSEOQuery {
+    imageSharp(fluid: { originalName: { eq: "img-default.png" } }) {
+      gatsbyImageData
+    }
     site {
       siteMetadata {
         title

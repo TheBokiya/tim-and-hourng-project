@@ -3,7 +3,6 @@ module.exports = {
     title: "Tim & Hourng",
     description: "Our Commitment to Love",
     siteUrl: "https://timandhourng.com",
-    image: "src/images/img-default.png",
     author: "@thebokiya",
     social: {
       twitter: "tim_heng",
