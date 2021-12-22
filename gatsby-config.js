@@ -2,9 +2,11 @@ module.exports = {
   siteMetadata: {
     title: "Tim & Hourng",
     description: "Our Commitment to Love",
-    url: "https://timandhourng.com",
-    image: "src/images/pre-wedding/apartment-00012.JPG",
+    siteUrl: "https://timandhourng.com",
     author: "@thebokiya",
+    social: {
+      twitter: "tim_heng",
+    },
   },
   plugins: [
     "gatsby-plugin-react-helmet",
