@@ -190,6 +190,10 @@ export const MenuItems = [
     link: "/",
   },
   {
+    page: "The One With The Gold Fish",
+    link: "/the-one-with-the-gold-fish",
+  },
+  {
     page: "Pre-Wedding",
     link: "/pre-wedding",
   },

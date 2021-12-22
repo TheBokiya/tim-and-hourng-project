@@ -28,7 +28,7 @@ const WeddingPage = () => {
       </div>
       <div className="h-1/3">
         <StaticImage
-          src="../images/pre-wedding/baking-00005.JPG"
+          src="../images/the-one-with-the-gold-fish/baking-00005.JPG"
           placeholder="blurred"
           alt="sofitel cover image"
           className="lg:h-mdImg 2xl:h-xlImg"
