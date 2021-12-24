@@ -49,8 +49,8 @@ const PreWeddingPage = ({ data }) => {
           During the shoot, I just couldn't take my eyes off Muy Hourng. I think
           she looks good in everything that she wears but seeing her in these
           formal wears just took my breath away. Everyday I wake up, I'm
-          grateful that we have found each other and get to spend our whole life
-          together.
+          grateful that we have found each other and get to spend our whole
+          lives together.
         </p>
         <p>Together. Always.</p>
         <hr className="my-10" />
