@@ -1,9 +1,9 @@
+import Gallery from "@browniebroke/gatsby-image-gallery";
+import { graphql } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { StaticImage } from "gatsby-plugin-image";
-import Gallery from "@browniebroke/gatsby-image-gallery";
-import ExternalLink from "../components/external-link";
 
 export const query = graphql`
   query {
@@ -26,43 +26,33 @@ export const query = graphql`
 
 const PreWeddingPage = ({ data }) => {
   const images = data.allFile.edges.map(({ node }) => node.childImageSharp);
-
   return (
     <Layout>
       <SEO title="Pre-Wedding" />
       <div className="animate__animated animate__fadeIn">
         <div className="static max-h-screen overflow-y-hidden">
           <StaticImage
-            src="../images/pre-wedding/painting-00003.JPG"
-            alt="phnom-penh-cover"
+            src="../images/pre-wedding/pre-wedding-00017.JPG"
+            alt="pre-wedding-cover"
             placeholder="blurred"
-            className="animate__animated animate__fadeIn"
           />
         </div>
       </div>
       <div className="custom-container">
-        <h1 className="uppercase text-3xl pt-10">The one with the gold fish</h1>
+        <h1 className="uppercase text-3xl pt-10">Pre-Wedding</h1>
         <p>
-          Inspired by a lot of things that we commonly like, we came up with
-          this short with the help of{" "}
-          <ExternalLink
-            title="Pepper Media Cambodia"
-            link="https://www.facebook.com/Peppermediakh"
-          />
-          . We wanted to make our pre-wedding short to be unique, something that
-          we could have fun and something that we could come back in 20 years
-          time and laugh about it.
+          When I was young, my mom used to dress me up with suspenders all the
+          time. Wearing one of these formal wears with a suspender really took
+          me back.
         </p>
-        <p>We hope you enjoy this short as much as we enjoyed making it.</p>
-        <div className="videoWrapper">
-          <iframe
-            src="https://www.youtube.com/embed/ddNVmicw8H4"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <p>
+          During the shoot, I just couldn't take my eyes off Muy Hourng. I think
+          she looks good in everything that she wears but seeing her in these
+          formal wears just took my breath away. Everyday I wake up, I'm
+          grateful that we have found each other and get to spend our whole
+          lives together.
+        </p>
+        <p>Together. Always.</p>
         <hr className="my-10" />
         <Gallery images={images} />
       </div>

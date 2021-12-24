@@ -12,7 +12,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <div className="animate__animated animate__fadeIn">
         <StaticImage
-          src="../images/pre-wedding/apartment-00012.JPG"
+          src="../images/the-one-with-the-gold-fish/apartment-00012.JPG"
           alt="index-cover-image"
           placeholder="blurred"
         />
